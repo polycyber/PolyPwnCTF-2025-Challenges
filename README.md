@@ -1,6 +1,6 @@
 # PolyPwnCTF-2025-Challenges
 
-Ce dépôt contient les challenges de l'édition 2025 du PolyPwn, un CTF (Capture The Flag) organisé par Polytechnique Montréal.
+Ce dépôt contient les challenges de l'édition 2025 du PolyPwn, un CTF (Capture The Flag) organisé par [PolyCyber](https://polycyber.io/).
 
 Le lien du CTFD (Les challenges resteront up jusqu'au 8 Avril, après cette date il faudra les hoster localement) : https://ctf.polycyber.io
 
@@ -26,7 +26,7 @@ Les challenges sont organisés par catégories dans des dossiers dédiés. Chaqu
 
 # PolyPwnCTF-2025-Challenges
 
-This repository contains the challenges for the 2025 edition of PolyPwn, a CTF (Capture The Flag) event organized by Polytechnique Montréal.
+This repository contains the challenges for the 2025 edition of PolyPwn, a CTF (Capture The Flag) event organized by [PolyCyber](https://polycyber.io/).
 
 CTFD link (Challenges will remain available until April 8th, after which date they will need to be hosted locally): https://ctf.polycyber.io
 
