@@ -1,0 +1,41 @@
+name: "I'm Janet III"
+author: Ch0ufleur
+category: Stegano
+
+description: |-
+  ## Description (français)
+
+  Salut, je suis Janet, votre assistante personnelle ici dans le Bon Endroit. Je suis un vaisseau humanoïde de toute la connaissance humaine.
+  Pour m'aider à passer au travers de ma rupture avec Jason, j'ai créé Derek.
+
+
+  Je me demande où j'aurais pu indiquer que c'est moi qui l'a créé...
+
+  
+  ## Description (english)
+  
+  Hi! I'm Janet, your personal assistant here in the Good Place. I'm an anthropomorphized vessel of knowledge for all things there is to know about the universe.
+  To help myself overcome my breakup with Jason, I created Derek.
+
+
+  I wonder where I could have indicated that I'm the one that created him...
+
+
+flags:
+  - polycyber{m4d3_by_j4n3t_9c001a3}
+
+tags:
+  - Stegano
+  - A:Ch0ufleur
+  - introduction
+
+# Requirements are used to make a challenge require another challenge to be solved before being available.
+requirements:
+  - "Règles"
+  - "I'm Janet II"
+
+### Don't change this part ###
+
+value: 30  
+type: standard
+

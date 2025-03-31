@@ -1,0 +1,42 @@
+name: "Ocean's 1"
+author: ptrstr
+category: Misc
+
+description: |-
+  ## Description (français)
+
+  Votre ami de longue date, Danny Ocean, vous a choisi personnellement pour rejoindre son équipe pour le vol du siècle. Votre rôle ? Le hacker.
+  Vous devrez infiltrer les systèmes du Polypwn Grand afin de manipuler leurs caméras de surveillance pour assurer le succès du braquage.
+  Le risque est énorme et le temps presse. Saurez-vous déjouer le système et aider votre équipe à réaliser le vol ultime ?
+
+  ## Description (english)
+
+  Your longtime friend Danny Ocean has handpicked you to join his team for the heist of the century. Your role? The hacker.
+  You will need to infiltrate the Polypwn Grand's systems to tamper with their camera systems for the heist to succeed.
+  The stakes are high, and time is limited. Can you outsmart the system and help your crew pull off the ultimate heist?
+
+flags:
+  - polycyber{rTsP_15n7_S0_b4D}
+
+tags:
+  - Misc
+  - A:ptrstr
+  - medium
+
+connection_info: "You will need to add `polypwngrand.ctf` to your `hosts` file. Point it to ctf.polycyber.io. HTTP: http://polypwngrand.ctf:21080, RTSP: rtsp://polypwngrand.ctf:21554"
+
+hints:
+  - "Danny: While on smoke break, I overheard a dev complaining about one of the page's SQL"
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  minimum: 150
+  decay: 10

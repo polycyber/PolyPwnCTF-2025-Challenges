@@ -1,0 +1,22 @@
+services:
+  nginx-proxy:
+    image: nginxproxy/nginx-proxy:alpine
+    container_name: nginx-proxy
+    ports:
+      - "21080:80"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+    environment:
+      - DEFAULT_HOST=polypwngrand.ctf
+  cams:
+    build: ./cams
+    ports:
+      - "21554:554"
+    environment:
+      - VIRTUAL_HOST=manager.polypwngrand.ctf
+      - WEB_PORTS=80
+  slots:
+    build: ./slots
+    environment:
+      - VIRTUAL_HOST=polypwngrand.ctf
+      - WEB_PORTS=80

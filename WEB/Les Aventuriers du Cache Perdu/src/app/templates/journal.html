@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnet Privé</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-image: url('static/notebook.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #3e2723;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .secret-section {
+            background-color: #fbe9e7;
+            border: 2px dashed #d84315;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #6d4c41;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background-color: #5d4037;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Carnet Privé</h1>
+        </header>
+        <p>Ce carnet contient des notes confidentielles prises par Dr. Proxy Jones durant son expédition :</p>
+        <div class="secret-section">
+            <p><strong>Notes secrètes :</strong></p>
+            {% if authorized %}
+            <p>L’entrée de la caverne est protégée par une énigme. Le mot de passe se trouve gravé sur l’amulette
+                d’Amun-Ra.</p>
+            <p>Flag : {{ flag }}</p>
+            {% else %}
+            <p>Seul le Dr Proxy Jones peut accéder aux notes secrètes.</p>
+            {% endif %}
+        </div>
+        <a href="/" class="btn">Retour au journal public</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+
+### Change this part ###
+
+name: "TitaNIC"
+author: Yxène
+category: Network
+
+description: |-
+  ## Description (français)
+
+  Impossible de trouver son chemin dans ce cinéma ! J'essaie de suivre les indications du **Dispositif de  Numérotation de Salle** mais on dirait que la séance pour *TitaNIC: La légende pirate* est inaccessible !
+  
+  ## Description (english)
+  
+  Impossible to find my way in this cinema! I'm trying to follow the **Door Numbering System**, but it looks like the screening for *TitaNIC: The Pirate Legend* is unreachable!
+
+
+flags:
+  - polycyber{4lt3rn4t1v3_DN5_r007_n3v3r_s1nk_unl1k3_T1t4n1c}
+
+tags:
+  - network
+  - A:Yxène
+  - beginner
+
+files:
+  - "files/titanic.pcapng"
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  minimum: 50
+  decay: 10

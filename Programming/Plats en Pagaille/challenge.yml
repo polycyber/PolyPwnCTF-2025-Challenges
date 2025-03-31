@@ -1,0 +1,50 @@
+
+### Change this part ###
+
+name: "Plats en Pagaille"
+author: Yadei
+category: Programming
+
+description: |-
+  ## Description (français)
+
+  Dans les cuisines de Chez Gusteau la tension monte. Le célèbre critique Anton Ego vient d'arriver et est prêt à retirer une nouvelle étoile au restaurant.
+  Ton job : trouver les plats qui lui feront plaisir. Attention il est très capricieux et semble ne rien dire sur ses envies qui changent constamment. 
+  Peut-être qu'il n'en montre plus qu'il n'en dit dans son assiette...
+  Le format du flag est : polycyber{[a-zA-Z]}
+  
+  ## Description (english)
+  
+  In the kitchens of Chez Gusteau, tension is rising. The famous critic Anton Ego has just arrived and is ready to take away another star from the restaurant.
+  Your job: Find the dishes that will please him. But be careful—he is extremely picky and says nothing about his ever-changing cravings.
+  Perhaps he reveals more in his plate than in his words...
+  The flag format is : polycyber{[a-zA-Z]}
+
+
+flags:
+  - polycyber{UnFLagRAfFinE}
+
+tags:
+  - Programming
+  - medium
+  - A:Yadei
+
+# If files needed
+files:
+  - "files/menu.txt"
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 500
+type: docker
+extra:
+  docker_image: "plats_en_pagaille:latest"
+  dynamic: True
+  initial: 500
+  minimum: 150
+  decay: 10
+

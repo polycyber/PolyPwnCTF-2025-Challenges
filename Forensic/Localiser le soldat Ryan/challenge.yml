@@ -1,0 +1,46 @@
+
+### Change this part ###
+
+name: "Localiser le soldat Ryan"
+author: chrichriGeorgie
+category: Forensic
+
+description: |-
+  ## Description (français)
+
+  Nous avons reçu cette communication concernant les mouvements de la 101eme division. Pourras-tu aider le capitaine Miller à localiser et à sauver le soldat Ryan?
+
+  Format de flag POLYCYBER-FLAG
+  
+  ## Description (english)
+  
+  We received this communication regarding the movements of the 101st division. Can-you help Captain Miller locate and save Private Ryan?
+
+  Flag Format POLYCYBER-FLAG
+
+
+flags:
+  - POLYCYBER-G0S4V3PRIVAT3RY4N
+
+tags:
+  - forensic
+  - medium
+  - A:chrichriGeorgie
+
+# If files needed
+files:
+  - "files/locatingprivateryan.pcap"
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 500  
+type: dynamic
+extra:
+  initial: 500
+  minimum: 150
+  decay: 10
+

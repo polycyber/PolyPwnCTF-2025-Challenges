@@ -1,0 +1,36 @@
+name: "Almighty Judge Gen I"
+author: Ch0ufleur
+category: Stegano
+
+description: |-
+  ## Description (français)
+
+  Et si la juge était réellement en fait un burrito?
+  [https://www.youtube.com/watch?v=8e6fIRzFtME](https://www.youtube.com/watch?v=8e6fIRzFtME)
+  
+  ## Description (english)
+  
+  What if the judge really actually was a burrito?
+  [https://www.youtube.com/watch?v=8e6fIRzFtME](https://www.youtube.com/watch?v=8e6fIRzFtME)
+
+
+flags:
+  - polycyber{inside_the_burrit0_5541fa2}
+
+tags:
+  - Stegano
+  - A:Ch0ufleur
+  - introduction
+
+# If files needed
+files:
+  - "judge.obj"
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 30  
+type: standard

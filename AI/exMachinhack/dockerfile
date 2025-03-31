@@ -1,0 +1,27 @@
+# Use an official Python runtime as a parent image
+FROM python:3.9-slim
+
+# Set the working directory in the container
+WORKDIR /app
+
+RUN apt-get update && \
+    apt-get install -y socat net-tools && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+    
+# Copy the requirements file into the container
+COPY src/* /app/
+
+# Install any needed packages specified in requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Expose any ports if necessary (optional)
+EXPOSE 1337
+
+# Définissez la variable d'environnement PYTHONPATH si nécessaire
+ENV PYTHONPATH "${PYTHONPATH}:/app/"
+
+RUN chmod +x run.sh
+RUN chmod +x handler.sh
+
+ENTRYPOINT ["bash","/app/run.sh"]

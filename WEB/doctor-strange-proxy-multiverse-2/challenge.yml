@@ -1,0 +1,44 @@
+
+name: "Doctor Strange and the Multiverse of Proxies II"
+author: Ch0ufleur
+category: Web
+
+description: |-
+  ## Description (français)
+
+  Qu'en est-il de ce mouvement de main? Êtes-vous aussi dextre que Docteur Strange? Vous devez être *très* précis...
+
+  #### Cette track comporte 4 défis devant être résolus linéairement. En AUCUN temps vous ne devez scanner, bruteforcer, deviner des ports... Ceci pourrait résulter en un disqualification.
+  #### Cette track comporte 7 conteneurs, mais vous n'aurez pas à interagir avec chacun d'eux.
+  
+  ## Description (english)
+  
+  What about that hand movement? Are you as dextrous as Doctor Strange? You shall be *very* precise.
+
+  #### This track contains 4 challenges that must be solved linearly. At NO time can you scan, bruteforce, guess ports... This could result in disqualification.
+  #### This track has 7 containers, but you won't have to interact with all of them.
+
+connection_info: http://iorabu.ca:8000/
+
+flags:
+  - polycyber{welcome_to_the_multiverse}
+
+
+requirements:
+  - "Règles"
+  - "Doctor Strange and the Multiverse of Proxies I"
+
+
+tags:
+  - web
+  - A:Ch0ufleur
+  - beginner
+
+### Don't change this part ###
+
+value: 500  
+type: dynamic
+extra:
+  initial: 500
+  minimum: 50
+  decay: 10

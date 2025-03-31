@@ -1,0 +1,52 @@
+{
+    "users": [
+        {
+            "username": "admin",
+            "password": "llRmyRgmshM"
+        },
+        {
+            "username": "it",
+            "password": "K7Hn1rPQouU"
+        },
+        {
+            "username": "operator",
+            "password": "dQw4w9WgXcQ"
+        }
+    ],
+    "cameras": [
+        {
+            "name": "SLOTS",
+            "id": 9,
+            "endpoint": "/slots.rtsp",
+            "viewers": ["admin", "it", "operator"],
+            "source": "video/slots.mp4"
+        },
+        {
+            "name": "OFFICE",
+            "id": 30,
+            "endpoint": "/office.rtsp",
+            "viewers": ["admin", "it", "operator"],
+            "source": "video/office.mp4"
+        },
+        {
+            "name": "SECURITY",
+            "id": 13,
+            "endpoint": "/security.rtsp",
+            "viewers": ["admin", "it"],
+            "source": "video/security.mp4"
+        },
+        {
+            "name": "VAULT",
+            "id": 1,
+            "endpoint": "/vault.rtsp",
+            "viewers": ["admin"],
+            "source": "video/vault.mp4"
+        }
+    ],
+    "session_path": "/sessions",
+    "flags": [
+        "polycyber{rTsP_15n7_S0_b4D}",
+        "polycyber{Y0u_aRe_n0w_4_H0llYWo0d_1337_h4x0r}",
+        "polycyber{FfMpEg_3xf1l}"
+    ]
+}

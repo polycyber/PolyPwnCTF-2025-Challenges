@@ -1,0 +1,60 @@
+
+### Change this part ###
+
+name: "CinemAventure - Shutter Island"
+author: Hugo Foucrit
+category: Video Games
+
+description: |-
+  ## Description (français)
+
+  Dix flags cachés dans dix niveaux de jeu vidéo. Les dix flags se jouent tous dans le jeu à télécharger avec le lien fourni.
+  Chacun des niveaux est lié à un film, dans lequel vous devez trouver un mot en lien avec l'univers de ce film.
+  Format de flag : polycyber{FLAG} (toujours en majuscule sauf pour Harry Potter)
+  
+  
+  ## Description (english)
+  
+  Ten hidden flags in ten levels of video game. The ten flags are all played in the game to download with the link provided.
+  Each level is linked to a movie, in which you have to find a word related to the universe of this film.
+  Flag format: polycyber{FLAG} (always upper case except for Harry Potter)
+
+  https://aschef0.itch.io/cinemaventure
+  
+flags:
+  - polycyber{FOLIE}
+
+tags:
+  - VideoGames
+  - A:Hugo Foucrit
+  - beginner
+
+# If files needed
+#files:
+# - "test/test.txt"
+
+# If hints needed, choose the cost
+hints:
+  - {
+    content: "Who am I?",
+    cost: 25
+  }
+
+
+
+# Requirements are used to make a challenge require another challenge to be solved before being available.
+
+requirements:
+  - "Règles"
+
+
+
+### Don't change this part ###
+
+value: 500  
+type: dynamic
+extra:
+  initial: 500
+  minimum: 50
+  decay: 10
+

@@ -1,0 +1,11 @@
+services:
+  frontend:
+    build: ./frontend
+    ports:
+    - 25142:80
+    restart: unless-stopped
+  backend-server:
+    build: ./backend
+    ports:
+    - 25143:8000
+    restart: unless-stopped

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}LOGIN{% endblock %}
+{% block content %}
+<div class="card">
+    <h2>LOGIN</h1>
+    {% if error_msg %}
+    <p style="color: red">{{ error_msg }}</p>
+    {% endif %}
+    <form action="/login" method="POST">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        <br />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <br />
+        <button type="submit" class="button">Login</button>
+    </form>
+    <p class="footer">Need help? <a href="#support">Contact Support</a></p>
+</div>
+{% endblock %}

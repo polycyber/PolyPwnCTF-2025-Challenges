@@ -1,0 +1,45 @@
+name: "Ocean's 2"
+author: ptrstr
+category: Misc
+
+description: |-
+  ## Description (français)
+
+  Bon travail pour avoir obtenu l'accès au système de caméras.  
+  Cependant, Danny te demande de faire boucler leur flux vidéo pendant que son équipe pénètre dans la voute.  
+  Il te dit qu'il entrera dans le coffre environ 15 secondes après le début du processus de détournement.  
+  D'après ce que je vois, tu n'as pas encore cet accès. Trouve cet accès d'abord, puis essaie de détourner leur flux...
+
+  Indice: Pour exposer un port, vous pouvez utiliser https://serveo.net/
+
+  ## Description (english)
+
+  Good job on getting access to the camera system.
+  However, Danny is asking you to loop their camera stream while his crew breaks into the vault.
+  He tells you that he will enter the vault around 15 seconds after you start the hijacking process.
+  From what I can tell, you don't have that access yet. Find the access first, and then try to hook their stream...
+
+  Hint: To forward a port, you can use https://serveo.net/
+
+flags:
+  - polycyber{Y0u_aRe_n0w_4_H0llYWo0d_1337_h4x0r}
+
+tags:
+  - Misc
+  - A:ptrstr
+  - hard
+
+requirements:
+  - "Règles"
+  - "Ocean's 1"
+
+connection_info: "You will need to add `polypwngrand.ctf` to your `hosts` file. Point it to ctf.polycyber.io. HTTP: http://polypwngrand.ctf:21080, RTSP: rtsp://polypwngrand.ctf:21554"
+
+### Don't change this part ###
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  minimum: 250
+  decay: 10

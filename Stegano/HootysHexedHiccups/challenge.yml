@@ -1,0 +1,54 @@
+name: "Hooty's Hexed Hiccups"
+author: Majeed A.Baki
+category: Steganographie
+
+description: |-
+  ## Description (français)
+
+  C'est la panique au Manoir de la Chouette! Boubou a encore avalé des choses qu'il n'aurait pas dû.
+  Hiboubou, qui était sur la scène, l'a vu manger des potions, quelques pots de fleurs... et la caméra contenant les photos précieuses d'Eda!
+  Après plusieurs minutes de crachat et de hoquets, la caméra est ressortie. Cependant, il semblerait que la magie des Îles Bouillantes peut altérer les données binaires, puisque les photos ont été brouillées dans l'oesophage de Boubou.
+  Serais-tu capable de rétablir les images originales? Eda serait très reconnaissante!
+
+  ## Description (english)
+
+  Panic at the Owl House! Hooty has swallowed things he should not have once again.
+  Owlbert, who was on the scene, saw him eat potions, some flower pots... and the digital camera containing Eda's precious pictures!
+  After many minutes of spitting and hiccups, the camera came out. However, it seems that magic in the Boiling Isles can alter binary data, and the photos were scrambled in Hooty's oesophagus.
+  Can you restore the original images? Eda will be very thankful!
+
+flags:
+  - polycyber{3D4_S4YS_TH4NKS}
+
+tags:
+  - steganographie
+  - "A:Majeed_A.B."
+  - medium
+
+# If files needed
+files:
+  - "final/TOH_1.bmp"
+  - "final/TOH_2.bmp"
+  - "final/TOH_3.bmp"
+
+# If hints needed, choose the cost
+hints:
+  - content: "FR: Boubou est 99.9% sûr que le flag est dans la 3ème image, mais il pense que les 2 premiers seront un bon entraînement. EN: Hooty is 99.9% sure the flag is in the 3rd image, but he thinks the first 2 will be good training."
+    cost: 0
+  - content: "FR: Selon Hiboubou, Boubou aurait également avalé une potion de MélangeEnTête. Serait-il possible que les métadonnées des bitmaps aient été modifiés dans son estomac? EN: According to Owlbert, Hooty has also eaten a HeaderMix potion. Could it be that the bitmaps' metadatas were altered?"
+    cost: 5
+
+# Requirements are used to make a challenge require another challenge to be solved before being available.
+#requirements:
+#  - "My previous great challenge"
+
+
+requirements:
+  - "Règles"
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  minimum: 150
+  decay: 10

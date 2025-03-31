@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Cache d’Amun-Ra</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-image: url('/static/desert.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #3e2723;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgba(141, 110, 99, 0.9);
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #5d4037;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            margin-top: 20px;
+            background-color: #6d4c41;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background-color: #5d4037;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Le Cache d’Amun-Ra</h1>
+    </header>
+    <div class="container">
+        {% if name %}
+        <h2>Bienvenue, {{ name }} !</h2>
+        <p>Rejoignez Dr. Proxy Jones dans sa quête pour découvrir les secrets du légendaire artefact d’Amun-Ra. Voici
+            les indices trouvés jusqu’à présent :</p>
+        <ul id="clues-list">
+            <!-- Les indices seront insérés ici -->
+        </ul>
+        <img src="static/carte.avif" alt="Carte d'exploration">
+
+        <div class="link">
+            <a href="journal">Voir le journal du Dr. Proxy Jones</a>
+        </div>
+
+        <script src="{{ request.base_url }}static/index.js"></script>
+        {% else %}
+        <h2>Bienvenue, Aventurier !</h2>
+        <p>Pour continuer l'exploration, veuillez entrer votre nom dans l'URL, à l'aide du paramètre
+            <code>/?name=</code>
+            :
+        </p>
+        <p class="error-message">Erreur : Vous devez donner votre nom pour commencer l'aventure !</p>
+        {% endif %}
+    </div>
+
+</body>
+
+</html>

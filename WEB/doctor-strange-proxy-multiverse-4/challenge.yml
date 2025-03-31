@@ -1,0 +1,44 @@
+
+name: "Doctor Strange and the Multiverse of Proxies IV"
+author: Ch0ufleur
+category: Web
+
+description: |-
+  ## Description (français)
+
+  C'est le moment de trouver les secrets illimités du multivers.
+
+  #### Cette track comporte 4 défis devant être résolus linéairement. En AUCUN temps vous ne devez scanner, bruteforcer, deviner des ports... Ceci pourrait résulter en un disqualification.
+  #### Cette track comporte 7 conteneurs, mais vous n'aurez pas à interagir avec chacun d'eux.
+  
+  ## Description (english)
+  
+  It's time to find out all the illimited secrets the multiverse has to offer.
+
+  #### This track contains 4 challenges that must be solved linearly. At NO time can you scan, bruteforce, guess ports... This could result in disqualification.
+  #### This track has 7 containers, but you won't have to interact with all of them.
+
+connection_info: Vous le savez mieux que moi - You know it better than I do
+
+flags:
+  - polycyber{polyverse_8d113abd}
+
+requirements:
+  - "Règles"
+  - "Doctor Strange and the Multiverse of Proxies I"
+  - "Doctor Strange and the Multiverse of Proxies II"
+  - "Doctor Strange and the Multiverse of Proxies III"
+
+tags:
+  - web
+  - A:Ch0ufleur
+  - medium
+# medium ishhh
+### Don't change this part ###
+
+value: 500  
+type: dynamic
+extra:
+  initial: 500
+  minimum: 150
+  decay: 10

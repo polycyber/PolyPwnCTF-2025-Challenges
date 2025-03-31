@@ -1,0 +1,39 @@
+name: "Hack to the Future - Godmode"
+author: ptrstr
+category: Video Games
+
+description: |-
+  ## Description (français)
+
+  Marty ! Doc t'a demandé de venir sur un parking désert, mais tout cela te semble étrange. Tu as le pressentiment que quelque chose va mal tourner.
+  Et si… il t’était impossible de mourir ? Avoir une santé infinie pourrait être utile.
+
+  Indice: Vous aurez besoin de CheatEngine (Windows) ou de GameConqueror (Linux)
+
+  ## Description (english)
+
+  Marty! Doc told you to come to an empty parking lot, but it all seemed strange. You have a feeling things will go wrong.
+  What if, it were impossible for you to die? Having infinite health would be helpful.
+
+  Hint: You might need CheatEngine (Windows) or GameConqueror (Linux)
+
+flags:
+  - polycyber{I_aM_4_g0D_n0w!!}
+
+tags:
+  - VideoGames
+  - A:ptrstr
+  - medium
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  minimum: 150
+  decay: 10

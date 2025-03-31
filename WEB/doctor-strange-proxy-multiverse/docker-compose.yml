@@ -1,0 +1,78 @@
+services:
+  container_5:
+    build:
+      context: ./conteneur_socks1  # Path to Dockerfile for container 1
+      dockerfile: Dockerfile  # Optional: Specify Dockerfile name if not "Dockerfile"
+    container_name: conteneur_socks1 # Explicitly set container name
+    hostname: conteneur_socks1      # Set hostname
+    networks:
+      my_network:   
+    ports:
+      - 4269:4269
+
+  container_6:
+    build:
+      context: ./conteneur_socks2  # Path to Dockerfile for container 1
+      dockerfile: Dockerfile  # Optional: Specify Dockerfile name if not "Dockerfile"
+    container_name: gate_18 # Explicitly set container name
+    hostname: gate_18      # Set hostname
+    ports:
+      - 42069:42069
+    networks:
+      my_network:
+        ipv4_address: 172.18.0.73 
+
+  container_7:
+    build:
+      context: ./conteneur_api  # Path to Dockerfile for container 1
+      dockerfile: Dockerfile  # Optional: Specify Dockerfile name if not "Dockerfile"
+    container_name: uni_18 # Explicitly set container name
+    hostname: uni_18      # Set hostname
+    networks:
+      my_network:   
+
+  container_1:
+    build:
+      context: ./conteneur_exposed  # Path to Dockerfile for container 1
+      dockerfile: Dockerfile  # Optional: Specify Dockerfile name if not "Dockerfile"
+    container_name: conteneur_exposed # Explicitly set container name
+    hostname: conteneur_exposed      # Set hostname
+    networks:
+      my_network:   
+    ports:
+      - 8000:80
+
+  container_2:
+    build:
+      context: ./conteneur_web_1  # Path to Dockerfile for container 2
+      dockerfile: Dockerfile  # Optional
+    container_name: uni_16
+    hostname: unu_16
+    networks:
+      my_network:
+
+  container_3:
+    build:
+      context: ./conteneur_sqlite  # Path to Dockerfile for container 3
+      dockerfile: Dockerfile  # Optional
+    container_name: sqlite
+    hostname: sqlite
+    networks:
+      my_network:
+
+  container_4:
+    build:
+      context: ./serveur_exposed  # Path to Dockerfile for container 3
+      dockerfile: Dockerfile  # Optional
+    container_name: serveur_exposed
+    hostname: serveur_exposed
+    networks:
+      my_network:
+
+networks:
+  my_network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.18.0.0/16 

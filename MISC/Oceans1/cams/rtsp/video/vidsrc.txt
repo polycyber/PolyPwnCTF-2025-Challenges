@@ -1,0 +1,4 @@
+slots.mp4:https://pixabay.com/videos/casino-colorful-cruise-ship-176993/
+office.mp4:https://www.youtube.com/watch?v=R_FoFbAyVQk
+security.mp4:https://www.pexels.com/video/men-working-in-the-control-room-of-a-broadcasting-network-company-3433789/
+    ffmpeg -i security_old.mp4 -s 640:360 -an -c:a copy security.mp4

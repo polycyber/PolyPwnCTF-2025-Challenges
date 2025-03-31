@@ -1,0 +1,50 @@
+
+### Change this part ###
+
+name: "Doctor Strange and the Multiverse of Proxies I"
+author: Ch0ufleur
+category: Web
+
+description: |-
+  ## Description (français)
+
+  Le multivers est un endroit très étrange, Doctor Strange peut en témoigner. Des mots de passe dessinés au lieu d'être écrits? Des formes étranges?
+  Des vortex multi-spatiotemporels? Des standards qui changent soudainement?
+
+  Une chose est sûre, seul Doctor Strange a les capacités nécessaires pour s'aventurer dans le multivers des proxys.
+
+  Cette track est construite comme une chasse au trésor. Vous aurez besoin des indices trouvés dans la réponse d'une challenge pour pouvoir commencer le suivant.
+
+  #### Cette track comporte 4 défis devant être résolus linéairement. En AUCUN temps vous ne devez scanner, bruteforcer, deviner des ports... Ceci pourrait résulter en un disqualification.
+  #### Cette track comporte 7 conteneurs, mais vous n'aurez pas à interagir avec chacun d'eux.
+  
+  ## Description (english)
+  
+  The multiverse is a very strange place, as Doctor Strange can testify. Passwords drawn instead of written? Strange shapes?
+  Multi-spatiotemporal vortexes? Standards that suddenly change?
+
+  One thing's for sure, only Doctor Strange has the skills to venture into the multiverse of proxies.
+
+  This track is built like a treasure hunt. You will need hints found in a challenge's answer to begin the next challenge.
+
+  #### This track contains 4 challenges that must be solved linearly. At NO time can you scan, bruteforce, guess ports... This could result in disqualification.
+  #### This track has 7 containers, but you won't have to interact with all of them.
+
+connection_info: http://iorabu.ca:8000/
+
+flags:
+  - polycyber{d1r3ct0ryyyyyyy_listing_43e4412af}
+
+tags:
+  - web
+  - A:Ch0ufleur
+  - introduction
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 30  
+type: standard

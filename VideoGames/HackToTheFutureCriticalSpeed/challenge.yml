@@ -1,0 +1,38 @@
+name: "Hack to the Future - Critical speed"
+author: ptrstr
+category: Video Games
+
+description: |-
+  ## Description (français)
+
+  Marty ! Doc t'a demandé de venir sur un parking désert, mais tout cela te semble étrange. Tu as le pressentiment que quelque chose va mal tourner.  
+  Si seulement il était possible de remonter le temps, peut-être en atteignant une certaine vitesse avec une certaine voiture...
+
+  ## Description (english)
+
+  Marty! Doc told you to come to an empty parking lot, but it all seemed strange. You have a feeling things will go wrong.
+  If only it were possible to go back in time, maybe through reaching a certain speed with a certain car...
+
+flags:
+  - polycyber{4ckShu4lLy_h4ck1ng_to_tHe_futuRE}
+
+tags:
+  - VideoGames
+  - A:ptrstr
+  - medium
+
+files:
+  - "dist.zip"
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  minimum: 150
+  decay: 10

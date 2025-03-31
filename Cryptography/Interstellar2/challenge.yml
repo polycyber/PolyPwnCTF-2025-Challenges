@@ -1,0 +1,42 @@
+
+### Change this part ###
+
+name: "This little decryption gonna cost us 52 years"
+author: Alex
+category: Cryptography
+
+description: |-
+  ## Description (français)
+
+  Une fois arrivé près de Saturne, les astronautes reçoivent une dernière fois un message de leurs familles. Le protocole indique alors qu'ils doivent vérifier leur identité en validant leur signature. Sauras-tu les aider sachant que TARS n'a pas de clé privée pour t'aider dans cette tâche ? Il ne se rappelle seulement du programme de validation de signature.
+
+  ## Description (anglais)
+
+  Once they have arrived near Saturn, the astronauts receive a final message from their families. The protocol then indicates that they must verify their identity by validating their signature. Will you be able to help them, knowing that TARS has no private key to help you with this task? He only remembers the signature validation programme.
+  
+flags:
+  - polycyber{S1gn4tur3_1s_1mp0rt4nt_bu7_n0t_4lw4ys_s3cur3}
+
+tags:
+  - Cryptography
+  - A:Alex
+  - medium
+
+# If files needed
+files:
+  - "files/challenge.py"
+
+requirements:
+  - "Règles"
+  - "This little decryption gonna cost us 51 years"
+
+### Don't change this part ###
+value: 500
+type: docker
+extra:
+  docker_image: "interstellar2:latest"
+  dynamic: True
+  initial: 500
+  minimum: 150
+  decay: 10
+

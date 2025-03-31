@@ -1,0 +1,38 @@
+
+### Change this part ###
+
+name: "Hackladdin 1"
+author: Yoann
+category: Programming
+
+description: |-
+  ## Description (français)
+
+  Vous êtes au cinéma en train de regarder Hackladdin lorsque vous décidez de l'aider à entrer dans la grotte de Jhackfar. Apparemment, pour accéder aux trésors, il faut trouver un mot de passe. Heureusement, Abu affirme avoir entendu que le mot de passe est composé de 6 caractères. À vous de jouer !
+
+  ## Description (english)
+  
+  You're at the movies watching Hackladdin when you decide to help him enter the cave of Jhackfar. Apparently, to access the treasures, a password is required. Fortunately, Abu is certain that the password consists of 6 characters. It's time to get to work!
+
+flags:
+  - polycyber{C357UnM4573Rm1nD3nf417}
+
+tags:
+  - Programming
+  - A:Yoann
+  - medium
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+value: 500
+type: docker
+extra:
+  docker_image: "hackladdin1:latest"
+  dynamic: True
+  initial: 500
+  decay: 10
+  minimum: 150
+

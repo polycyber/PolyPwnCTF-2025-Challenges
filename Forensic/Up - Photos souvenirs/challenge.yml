@@ -1,0 +1,52 @@
+
+### Change this part ###
+
+name: "Up: Les photos souvenirs"
+author: chrichriGeorgie
+category: Forensic
+
+description: |-
+  ## Description (français)
+  
+  Russell, vrai explorateur du monde sauvage, a perdu sa photo souvenir préférée. 
+  Heureusement pour lui, la dernière fois qu'il la paufinait, il était en train d'obtenir le badge "Investiguer la mémoire". Pourras-tu l'aider à la retrouver?
+
+  Note: Ce défi a été testé avec les symboles de Abyss-W4tcher
+  
+  ## Description (english)
+  
+  Russell, a true wilderness explorer, has lost his favorite souvenir picture. 
+  Luckily for him, the last time he was editing it, he was earning the "Investigating the memory" badge. Can you help him find it?
+
+  Note: This challenge has been tested with Abyss-W4tcher's symbols
+
+
+  ```md5 1f2ced0dcf5df40c70b608d77daaa9c0```
+  
+  [](https://drive.google.com/file/d/10_t8A5BbfX8dcYXxoRUFEUeHutYLT1bL/view?usp=sharing)
+
+flags:
+  - polycyber{Y0u_Sav3d_Russ3ll_f4v_P1c}
+
+tags:
+  - forensic
+  - medium
+  - A:chrichriGeorgie
+
+# If files needed
+files:
+  - "files/UpChall.zip"
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 500  
+type: dynamic
+extra:
+  initial: 500
+  minimum: 150
+  decay: 10
+

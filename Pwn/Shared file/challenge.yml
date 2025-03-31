@@ -1,0 +1,46 @@
+### Change this part ###
+
+name: "Shared file"
+author: azazhel
+category: pwn
+
+description: |-
+  ## Description (français)
+
+  Nous avons réussi à intercepter les programmes de communication des rebelles. À vous de vous infiltrer dans leur système grâce à ces données.
+  Vive l'empire !!!
+
+  ## Description (english)
+
+  We have successfully intercepted the rebels' communication programs. Now, it's your turn to infiltrate their system using this data.
+  Long live the Empire !!!
+
+flags:
+  - polycyber{r3b3l_c0mm_pr0gr4m_0wn3d}
+
+tags:
+  - pwn
+  - A:azazhel
+  - hard
+
+connection_info: "nc ctf.polycyber.io <instance_port>"
+
+# If files needed
+files:
+  - "client"
+  - "server"
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 500
+type: docker
+extra:
+  docker_image: "shared_file_img:latest"
+  dynamic: True
+  initial: 500
+  minimum: 250
+  decay: 10

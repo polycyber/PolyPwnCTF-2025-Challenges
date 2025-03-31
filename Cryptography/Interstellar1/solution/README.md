@@ -1,0 +1,49 @@
+# This little decryption gonna cost us 51 years
+
+## Write-up FR
+
+Ce challenge introduit une première vulnérabilité d'un système RSA. Les clés publiques sont générées avec un exposant public `e` tel que `e` et `d`, l'exposant privé, respectent une relation particulière rendant le chiffrement sensible à l'**attaque de Wiener**.
+
+L'attaque de Wiener s'appuie sur une faiblesse qui se produit lorsque `d` est très petit par rapport à `n`. Cette attaque utilise des fractions continues pour approximer la valeur de `e/d` et retrouver `d`.
+
+Pour résoudre ce challenge, il suffit d'aller sur le site `https://www.dcode.fr/chiffre-rsa` et obtenir la solution.
+
+On peut aussi résoudre ce challenge avec python :
+
+```python
+from Crypto.Util.number import long_to_bytes
+import owiener
+
+n = 0xa890419c6a9b868caa28fec981295cd8fe1179bd629aabe6d4cb86d492510755f932311b818f676a2b48caedd5eabe81c0da55e09747df18bef8738d552cc5192b79c4554f3a0cd73f9b50dca0de8389819bafb9ea9c69e4e42b52bd1905e351f459cd807c733e9471f745d633e97a379e40c53e158fe9e10ea72d361b872c7ca86009eb458df8e2c39adaeeb165c99aa09d859c0d8183d2856bfa1737a87ef1af41f9b9b60e5ef49c95537401a548c60fc2b4ebf798a7e4a79c66b56b7ee6568cfa325eafed3bca1be7bc8f5ed579c07a74c792c2f53ac97a26dffa6e223d1b793e7afb8523cb0727c7d647166f7e7642b4f2ba359a2e320a516be241c82c1d
+e = 0x7e5134a0b9740342c93408ba2014d27fbbdfd1876f6a8095ae72b321a41ac0a24a5f8f8bf8e6802d85cf76176b48772cf6829abd27f9f8e02edde48726bc13a32e6c1bb38aab07075f5b33c42f60a943b2dabe631bf54d584b98fd7a93b21c4052c7fad5f33e15c916d3fdc4d3f6b2e819f10dd5144cc13ce4c2cabed699fa38aea51042c76c2d65d85780a3cd663498760bd4fdbf8e0b15afd5ef5949458588d4ec69f78b8a4d86ef0b4e99404a090d21f18041dd0943ae6d8859635737c24b84bb22cbd344b6027359233ef9a5ec065cb35427278cd54ab1efc9aaa98bd7f1d7464a0980453396bd51623f8886ed61e4593eb4d129b4474426087f9ceed1d1
+encrypted = 0x9f90852b9218f81f437d01aa2a4c96c3bec90c96c649b773f51a2a0bff105fde3affe278c2530d9232127489666c25d6a775a2aaa4278115321a9e35bf3d2980f36cd9c21714d1faed457f2c1e65ec971a7a2b1b12bd7832fc2a6f5be66c528b9b74dbd3e17adac5221238db453e8169a8584e81946d9ca0aec1b8038eba558bbfed50a6b71bb00a4e05a179c961ccf251c8f8c28160cc35fdb0dbbc1d32b7ffe26ed71f3966202c2eb524f667680c3b78f691cee0ece77161ad8eee959b705fa3e7d294829f15a5d76f145eed0c5804c866be1fcac1f2743c9866602699f3b60dce1398e48a73cd0cad3df297966d51b975f38e5a8da056fc31f5fde17dc7d0
+
+d = owiener.attack(e, n)
+print(long_to_bytes(pow(encrypted,d,n)))
+```
+
+On obtient alors :
+
+```plaintext
+b"Welcome aboard! Here's my welcome present: polycyber{W13nn3r_15_th1_50lut10n}"
+```
+
+## Write-up EN
+
+This challenge introduces an initial vulnerability in an RSA system. The public keys are generated with a public exponent `e` such that `e` and `d`, the private exponent, satisfy a particular relationship that makes the encryption vulnerable to **Wiener's attack**.
+
+Wiener's attack exploits a weakness that occurs when `d` is very small compared to `n`. This attack uses continued fractions to approximate the value of `e/d` and recover `d`.
+
+To solve this challenge, you can simply visit the website `https://www.dcode.fr/rsa-cipher` to obtain the solution.
+
+Alternatively, you can also solve this challenge using Python (see above).
+
+We get:
+
+```plaintext
+b"Welcome aboard! Here's my welcome present: polycyber{W13nn3r_15_th1_50lut10n}"
+```
+
+## Flag
+
+`polycyber{W13nn3r_15_th1_50lut10n}`

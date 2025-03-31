@@ -1,0 +1,37 @@
+name: "Hackside Out"
+author: Jean
+category: Stegano
+
+description: |-
+  ## Description (français)
+
+  Pour promouvoir le film Hackside Out, les organisateurs ont publié une image sur leurs réseaux sociaux.
+  À première vue, il s'agit d'une simple affiche promotionnelle, mais vous soupçonnez qu'un message secret s'y cache.
+  Serez-vous capable de le révéler ?
+
+  ## Description (english)
+
+  To promote the upcoming movie Hackside Out, the organizers posted an image on their social media.
+  At first glance, it looks like a simple promotional poster, but you have a hunch that there's more hidden beneath the surface.
+  Can you uncover the secret message?
+
+flags:
+  - polycyber{jOY_SADNe$S_F3Ar_DIsGu5t_aN93r}
+
+tags:
+  - Stegano
+  - A:Jean
+  - introduction
+
+# If files needed
+files:
+  - "files/image.jpeg"
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 30  
+type: standard

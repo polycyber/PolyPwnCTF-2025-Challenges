@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}HOME{% endblock %}
+{% block content %}
+<div class="card">
+    <h2>HOME</h1>
+    {% if not session.get('user') %}
+    <p>Redirecting...</p>
+    <p>If you are not redirected, click <a href="/login">here</a></p>
+    <script>
+        // CONFIDENTIAL CODE. DO NOT COPY
+        setTimeout(() => {
+            window.location = "/login";
+        }, 2000);
+    </script>
+    {% endif %}
+</div>
+{% endblock %}

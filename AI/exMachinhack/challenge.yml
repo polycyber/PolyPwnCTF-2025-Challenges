@@ -1,0 +1,41 @@
+
+### Change this part ###
+
+name: "ExMachinhack"
+author: Yoann
+category: AI
+
+description: |-
+  ## Description (français)
+
+  Fatigué de tous ces challenges, vous vous posez devant un bon film : ExMachinHack. Après une heure de discussion avec AVA, elle vous propose de jouer au puissance 4.
+  Elle promet un cadeau si vous reussissez à la battre...
+
+  ## Description (english)
+
+  Tired of all these challenges, you sit in front of a good movie: ExMachinHack. After an hour of discussion with AVA, she offers to play Connect 4.
+  She promises a gift if you manage to beat her...
+
+
+flags:
+  - polycyber{C0nn3ct_4_1s_4w3s0m3}
+
+tags:
+  - AI
+  - A:Yoann
+  - beginner
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 500
+type: docker
+extra:
+  docker_image: "exmachinhack:latest"
+  dynamic: True
+  initial: 500
+  decay: 10
+  minimum: 50
+

@@ -1,0 +1,177 @@
+---Entrées---
+Salade Niçoise
+Salade de chèvre chaud
+Tartare de saumon
+Caviar d’aubergine
+Salade de haricots verts aux noix
+Pâté en croûte
+Jambon persillé
+Ballotine de volaille
+Gougères
+Chaussons au fromage
+Feuilletés au jambon
+Mini-croques-monsieur
+Cannelés au fromage
+Petits fours
+Bouchées aux olives
+Tartelettes aux oignons
+Financiers salés
+Canapés au saumon
+Oeuf parfait aux champignons
+{}eufs brouillés à la truffe
+Oeufs mimosa
+Oeufs farcis au thon
+{}euf cocotte
+Tartare d’avocat et crevettes
+Poireaux vinaigrette
+Asperges sauce mousseline
+Cocotte de légumes
+Velouté de courgettes
+Terrine de campagne
+Pâté de foie de volaille
+Terrine de poisson
+Rillettes de canard
+Saucisson brioché
+Mousseline de légumes
+Pain de viande
+Tartare de langoustines
+Langoustines rôties
+Gambas flambées au cognac
+Ceviche de poisson blanc
+Noix de Saint-Jacques snackées
+Yakitori de poulet
+Brochettes de boeuf mariné
+Nems au poulet
+Poulet karaage
+Satay de poulet
+Céleri rémoulade
+Salade de carottes râpées
+Chou rouge vinaigrette
+Céleri branche aux noix
+Concombre à la crème
+Carpaccio de boeuf
+Carpaccio de poisson
+Tataki de boeuf
+Gravlax de saumon
+Tartare de boeuf
+Youka
+Boulettes de poisson
+Beignets de crevettes
+Tofu frit
+Galettes de légumes
+Quiche Lorraine
+Tarte aux poireaux
+Tourte aux champignons
+Clafoutis salé
+Flamiche picarde
+Bisque de homard
+Soupe de poissons
+Velouté de crustacés
+Bouillabaisse
+Consommé de homard
+Escargots de Bourgogne
+Cassolette de champignons
+Ris de veau persillés
+Cuisses de grenouille
+Champignons farcis
+Soupe froide de concombre
+Gaspacho andalou
+Soupe froide d’avocat
+Vichyssoise
+Crème d’asperges froide
+Rillettes de saumon
+Tartare de saumon
+Gravelax de truite
+Brandade de morue
+Rillette de thon
+{}melette norvégienne
+{}melette soufflée
+{}melette
+{}melette aux champignons
+{}melette aux fines herbes
+
+---Plats Principaux---
+Boeuf Bourguignon
+Daube provençale
+Carbonnade flamande
+Pot-au-feu
+Blanquette de veau
+Soba sautées
+Yakisoba
+Udon
+Ramen
+Bouillon miso
+Navarin d’agneau
+Ragoût de mouton
+Tajine d’agneau
+Épaule d’agneau confite
+Goulash
+Filet de boeuf Rossini
+Châteaubriand
+Tournedos aux morilles
+Magret de canard au miel
+Côte de veau aux truffes
+Lotte à l’armoricaine
+Cabillaud en croûte d’herbes
+Bar en papillote
+Turbot meunière
+Raie au beurre noisette
+Andouillette de Troyes
+Boudin noir aux pommes
+Tripes à la mode de Caen
+Pieds de cochon
+Rognons de veau grillés
+Grâtin dauphinois
+Aligot
+Pommes de terre sarladaises
+Purée de céleri
+Tartiflette
+Ratatouille
+Tian de légumes
+Poêlée de légumes du soleil
+Légumes farcis
+Piperade basque
+
+---Fromages---
+Abondance
+Tomme de Savoie
+Beaufort
+Reblochon
+Comté
+Roquefort
+Bleu d’Auvergne
+Gorgonzola
+Stilton
+Fourme de Montbrison
+Fourme d'Ambert
+Bleu de Gex
+Munster
+Cantal
+Maroilles
+Foudjou
+Brocciu
+Chabichou
+Pélardon
+Brousse
+
+---Desserts---
+Iles flottantes
+Crème caramel
+Panna cotta
+Mousse au chocolat
+Riz au lait
+Nonnette
+Pain d’épices
+Cannelé bordelais
+Financier
+Madeleines
+Eclair
+Religieuse
+Paris-Brest
+Saint-Honoré
+Mille-feuille
+}{aupia
+Tarte tropézienne
+Baba au rhum
+Clafoutis aux cerises
+Pavlova

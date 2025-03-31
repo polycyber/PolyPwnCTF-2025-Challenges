@@ -1,0 +1,61 @@
+
+### Change this part ###
+
+name: "Operation Dark Sabotage 1"
+author: azazhel
+category: Misc
+
+description: |-
+  ## Description (français)
+
+  Prouvez votre allégeance à l'Empire en compromettant le système de votre voisin.
+  Vive l'Empire !!!
+  
+  ## Description (english)
+  
+  Prove your allegiance to the Empire by compromising your neighbor's system.
+  Long live the Empire !!!
+
+
+flags:
+  - polycyber{l0ng_l1v3_th3_3mp1r3}
+
+tags:
+  - Misc
+  - A:azazhel
+  - introduction
+
+connection_info:  "ssh -p <instance_port> jhon@ctf.polycyber.io password: 9Y51HjIg6bN2TI"
+
+# If files needed
+files:
+  - "src.c"
+
+# If hints needed, choose the cost
+#hints:
+#  - {
+#    content: "This hint costs points",
+#    cost: 10
+#  }
+#  - This hint is free
+
+
+# Requirements are used to make a challenge require another challenge to be solved before being available.
+#requirements:
+#  - "My previous great challenge"
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 30
+type: docker
+extra:
+  docker_image: "operationdarksabotage1_img:latest"
+  dynamic: false
+  initial: 30
+  minimum: 30
+  decay: 1
+

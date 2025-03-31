@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extract Non-White Pixels</title>
+</head>
+<body>
+    <input type="file" id="imageInput" accept="image/png">
+    <button id="processButton">Process Image</button>
+    <pre id="output"></pre>
+
+    <canvas id="canvas" style="display:none;"></canvas>
+
+    <script>
+        document.getElementById("processButton").addEventListener("click", function () {
+            const input = document.getElementById("imageInput");
+            if (!input.files.length) {
+                alert("Please select a PNG file.");
+                return;
+            }
+
+            const file = input.files[0];
+            const reader = new FileReader();
+
+            reader.onload = function (event) {
+                const img = new Image();
+                img.onload = function () {
+                    const canvas = document.getElementById("canvas");
+                    const ctx = canvas.getContext("2d");
+
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    ctx.drawImage(img, 0, 0);
+
+                    const imageData = ctx.getImageData(0, 0, img.width, img.height);
+                    const pixels = imageData.data;
+                    const nonWhitePixels = [];
+
+                    for (let i = 0; i < pixels.length; i += 4) {
+                        const r = pixels[i];
+                        const g = pixels[i + 1];
+                        const b = pixels[i + 2];
+                        const a = pixels[i + 3];
+
+                        if (!(r === 255 && g === 255 && b === 255 && a === 255)) { // Not pure white
+                            let x = (i / 4) % img.width;
+                            let y = Math.floor((i / 4) / img.width);
+                            nonWhitePixels.push({ x, y });
+                        }
+                    }
+
+                    // Output the JSON
+                    const output = JSON.stringify(nonWhitePixels, null, 2);
+                    document.getElementById("output").textContent = output;
+
+                    // Download JSON file
+                    const blob = new Blob([output], { type: "application/json" });
+                    const link = document.createElement("a");
+                    link.href = URL.createObjectURL(blob);
+                    link.download = "pixels.json";
+                    link.click();
+                };
+                img.src = event.target.result;
+            };
+            reader.readAsDataURL(file);
+        });
+    </script>
+</body>
+</html>

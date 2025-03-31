@@ -1,0 +1,61 @@
+
+### Change this part ###
+
+name: "Be a jedi"
+author: azazhel
+category: pwn
+
+description: |-
+  ## Description (français)
+
+  Votre mission est de vous faire passer pour un Jedi afin d'obtenir le message secret.
+  Vive l'Empire !!!
+  
+  ## Description (english)
+
+  Your mission is to disguise yourself as a Jedi to obtain the secret message.
+  Long live the Empire !!!
+
+
+flags:
+  - polycyber{y0u_r3_4_r34l_j3d1}
+
+tags:
+  - pwn
+  - A:azazhel
+  - introduction
+
+connection_info: nc ctf.polycyber.io <instance_port>
+
+# If files needed
+files:
+  - "jedi.c"
+  - "jedi"
+
+# If hints needed, choose the cost
+#hints:
+#  - {
+#    content: "This hint costs points",
+#    cost: 10
+#  }
+#  - This hint is free
+
+
+# Requirements are used to make a challenge require another challenge to be solved before being available.
+#requirements:
+#  - ""
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 30
+type: docker
+extra:
+  docker_image: "jedi_img:latest"
+  dynamic: false
+  initial: 30
+  minimum: 30
+  decay: 1

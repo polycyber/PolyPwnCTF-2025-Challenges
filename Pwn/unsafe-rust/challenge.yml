@@ -1,0 +1,56 @@
+
+### Change this part ###
+
+name: "Le Prieuré de la Rouille"
+author: Svieg
+category: pwn
+
+description: |-
+  ## Description (français)
+
+  Le Prieuré de la Rouille cache un très grand secret. Nous avons un binaire à exploiter qui est aussi déployé dans l'infrastructure sacrée du Prieuré et qui pourrait détenir la vérité!
+  
+  ## Description (english)
+  
+  The Prieure hides a terrible secret. We have a binary to exploit that we took from the sacred Prieure infrastructure which holds the truth!
+
+
+flags:
+  - polycyber{L4_R0U1LL3_C4_BR153}
+
+tags:
+  - pwn
+  - A:Svieg
+  - beginner
+
+# If files needed
+files:
+  - "files/prieure"
+
+# If hints needed, choose the cost
+#hints:
+#  - {
+#    content: "This hint costs points",
+#    cost: 10
+#  }
+#  - This hint is free
+
+
+# Requirements are used to make a challenge require another challenge to be solved before being available.
+#requirements:
+#  - "My previous great challenge"
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 500
+type: docker
+extra:
+  docker_image: "prieure:latest"
+  dynamic: True
+  initial: 500
+  minimum: 50
+  decay: 10

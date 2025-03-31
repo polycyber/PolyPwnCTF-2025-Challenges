@@ -1,0 +1,24 @@
+# SherlHack 2
+
+**`Auteur:`** [Yoann](https://github.com/YoannSab)
+
+## Description (français)
+
+L'heure est très grave !  Moriarty a décidé de passer à l'étape supérieure et a pris le contrôle le contrôle d'un avion pour lâcher une bombe dans l'agglomération de Montréal. Il est très sérieux et a déjà envoyé un message à la police pour les prévenir de la date et de l'heure : le 29 Mars 2025 à 21h40 précise.
+
+Heureusement, Sherlhack à réussi à intercepter certaines communications provenant de l'avion ! A vous de retrouver la position du largage de la bombe, dépêchez-vous !
+
+Le flag est de la forme `polycyber{XX.XX,YY.YY}`, où `XX.XX` et `YY.YY` sont les coordonnées géographiques du largage de la bombe (arrondies à 2 chiffres après la virgule).
+
+## Description (anglais)
+
+The situation is very serious! Moriarty has decided to take it to the next level and has taken control of a plane to drop a bomb in the Montreal area. He is very serious and has already sent a message to the police to warn them of the date and time: March 29, 2025 at 9:40 p.m. sharp.
+
+Fortunately, Sherlhack has managed to intercept some communications from the plane! It's up to you to find the position of the bomb drop off, hurry up!
+
+The flag is of the form `polycyber{XX.XX,YY.YY}`, where `XX.XX` and `YY.YY` are the geographical coordinates of the bomb drop off (rounded to 2 digits after the decimal point).
+
+
+## Solution
+
+La solution se trouve [ici](./solution/).

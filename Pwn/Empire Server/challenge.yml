@@ -1,0 +1,58 @@
+
+### Change this part ###
+
+name: "Empire Server"
+author: azazhel
+category: pwn
+
+description: |-
+  ## Description (français)
+
+  L'Empire soupçonne que la République se cache derrière ce serveur. Compromettez ce système et dévoilez leur trahison.
+  Vive l'empire !!!
+  
+  ## Description (english)
+
+  The Empire suspects that the Republic is hiding behind this server. Compromise this system and reveal their betrayal.
+  Long live the Empire !!!
+
+
+flags:
+  - polycyber{L3t_th3_R3pUbl1c_b3g1n!}
+
+tags:
+  - pwn
+  - A:azazhel
+  - medium
+
+# If files needed
+files:
+  - "republic_web_server"
+
+# If hints needed, choose the cost
+#hints:
+#  - {
+#    content: "This hint costs points",
+#    cost: 10
+#  }
+#  - This hint is free
+
+
+# Requirements are used to make a challenge require another challenge to be solved before being available.
+#requirements:
+#  - ""
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 500
+type: docker
+extra:
+  docker_image: "republic_server_pwn:latest"
+  dynamic: True
+  initial: 500
+  minimum: 150
+  decay: 10

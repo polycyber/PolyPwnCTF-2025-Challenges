@@ -1,0 +1,55 @@
+
+name: "Doctor Strange and the Multiverse of Proxies III"
+author: Ch0ufleur
+category: Web
+
+description: |-
+  ## Description (français)
+
+  Quel est ce langage étrange... Un langage propre à l'univers 16 (ou 10 si vous le regardez dans l'autre sens), clairement. 
+
+  En fait, le multivers est tellement étrange que je sens des odeurs de carpaccio à la betterave jusqu'ici...
+
+  Je ferais mieux de prendre le temps d'explorer tous les recoins.
+
+  #### Cette track comporte 4 défis devant être résolus linéairement. En AUCUN temps vous ne devez scanner, bruteforcer, deviner des ports... Ceci pourrait résulter en un disqualification.
+  #### Cette track comporte 7 conteneurs, mais vous n'aurez pas à interagir avec chacun d'eux.
+  
+  ## Description (english)
+  
+  What is this strange language... The language of universe 16 (or 10, if you look at it the other way), clearly. 
+
+  In fact, the multiverse is so strange that I can smell beetroot carpaccio all the way over here...
+
+  I better take the time to look in every corner of this universe.
+
+  #### This track contains 4 challenges that must be solved linearly. At NO time can you scan, bruteforce, guess ports... This could result in disqualification.
+  #### This track has 7 containers, but you won't have to interact with all of them.
+
+connection_info: Vous le savez mieux que moi - You know it better than I do
+
+hints:
+  - FR:Il y a une façon efficace de faire ceci. Et il y a une façon longue qui sera moins agréable mais tout aussi valable. EN:There is an efficient manner of doing this. And there's another one, longer and more tedious, that would work all the same in the end.
+
+flags:
+  - polycyber{found_univers_16_a00032}
+
+requirements:
+  - "Règles"
+  - "Doctor Strange and the Multiverse of Proxies I"
+  - "Doctor Strange and the Multiverse of Proxies II"
+
+tags:
+  - web
+  - A:Ch0ufleur
+  - medium
+
+### Don't change this part ###
+
+value: 500  
+type: dynamic
+extra:
+  initial: 500
+  minimum: 150
+  decay: 10
+

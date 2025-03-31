@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}CAMS{% endblock %}
+{% block content %}
+{% for camera in cameras %}
+<div class="card">
+    <h2>{{ camera['name'] }} [CAM{{ '%02d' % (camera['id']) }}]</h2>
+    <img class="camera-feed" src="/cams?id={{ camera['id'] }}" alt="LIVE FEED ERROR" />
+    <p class="footer">Click <a href="rtsp://%HOSTNAME%{{ camera['endpoint'] }}">here</a> to connect manually</p>
+</div>
+{% endfor %}
+<script>
+    document.body.innerHTML = document.body.innerHTML.replaceAll('%HOSTNAME%', window.location.hostname);
+</script>
+{% endblock %}

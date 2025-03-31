@@ -1,0 +1,45 @@
+name: "Hackside Out 2"
+author: Jean
+category: Stegano
+
+description: |-
+  ## Description (français)
+
+  Après avoir visionné Hackside Out, vous vous sentez inspiré et curieux, ce qui vous amène à une exposition d’art.
+  En explorant la galerie, vous tombez sur une peinture captivante qui semble renfermer plus qu’il n’y paraît.
+  Votre tâche consiste à découvrir le message caché dissimulé dans l’oeuvre.
+  
+  ## Description (english)
+  
+  After watching Hackside Out, you find yourself inspired and curious, leading you to an art exhibition.
+  While exploring the gallery, you stumble upon a captivating painting that seems to hold more than meets the eye.
+  Your task is to uncover the hidden message concealed within the artwork.
+
+flags:
+  - polycyber{VO1R_1A_v!3_En_reD_gRe3N_@nd_81u3}
+
+tags:
+  - Stegano
+  - A:Jean
+  - beginner
+
+# If files needed
+files:
+  - "files/captivating-painting.png"
+
+# If hints needed, choose the cost
+# hints:
+#   - This hint is free
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 500  
+type: dynamic
+extra:
+  initial: 500
+  minimum: 50
+  decay: 10

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Slot Machine{% endblock %}
+{% block content %}
+    <div class="flex flex-col items-center justify-center min-h-screen">
+        <div class="text-center p-8 rounded-lg shadow-lg bg-white max-w-lg w-full">
+            <h1 class="text-4xl font-bold mb-4 text-gray-800">Slot Machine</h1>
+            
+            <p>Balance: <span id="balance">{{ balance }}</span></p>
+            <div class="flex justify-center space-x-4 mb-6">
+                <div class="text-4xl font-bold" id="reel0"></div>
+                <div class="text-4xl font-bold" id="reel1"></div>
+                <div class="text-4xl font-bold" id="reel2"></div>
+            </div>
+            
+            <button id="play-button" class="btn btn-primary px-6 py-2 text-lg">Spin</button>
+    </div>
+    <script>
+        const startSpinner = (id) => {
+            const values = ['🍎', '🍌', '🍒', '🍇', '🍍'];
+            return setInterval(() => {
+                document.getElementById(id).innerText = values[Math.floor(Math.random() * values.length)];
+            }, 100 + Math.random() * 50);
+        };
+
+        document.getElementById('play-button').addEventListener('click', () => {
+            document.getElementById('play-button').disabled = true;
+
+            const reels = ['reel0', 'reel1', 'reel2'];
+            const spinners = reels.map(startSpinner);
+
+            setTimeout(() => {
+                spinners.forEach(clearInterval);
+
+                fetch('/play', { method: 'POST' })
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById('play-button').disabled = false;
+                        
+                        for (let i = 0; i < 3; i++) {
+                            document.getElementById(reels[i]).innerText = data.slots[i];
+                        }
+
+                        document.getElementById('balance').innerText = data.balance;
+                    });
+            }, 2000);
+        });
+    </script>
+{% endblock %}

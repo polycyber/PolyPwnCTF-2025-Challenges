@@ -1,0 +1,41 @@
+name: "Ocean's 3"
+author: ptrstr
+category: Misc
+
+description: |-
+  ## Description (français)
+
+  Monsieur Ocean est extatique après avoir réussi à entrer dans le coffre-fort sans être vu sur les caméras.  
+  Cependant, un problème persiste : après avoir mis tout l'argent dans les sacs, un coffre-fort sécurisé reste intact.  
+  La dernière tâche que Monsieur Ocean vous confie est de trouver le mot de passe secret pour ce coffre-fort.
+  Il vous indique également que Polypwn Grand utilise une solution de gestion de mots de passe sophistiquée, où les informations principales sont stockées dans `/flag.txt`.
+
+  ## Description (english)
+
+  Mr. Ocean is ecstatic after being able to enter the vault without being seen on the cameras.
+  One issue remains though, as after putting all the money in the bags, an unopened and locked safe remains.
+  Mr. Ocean's last task for you is find the secret password for the safe.
+  He also tells you that Polypwn Grand uses an exquisite password management solution, where the core information is stored in `/flag.txt`.
+
+flags:
+  - polycyber{FfMpEg_3xf1l}
+
+requirements:
+  - "Règles"
+  - "Ocean's 2"
+
+tags:
+  - Misc
+  - A:ptrstr
+  - hard
+
+connection_info: "You will need to add `polypwngrand.ctf` to your `hosts` file. Point it to ctf.polycyber.io. HTTP: http://polypwngrand.ctf:21080, RTSP: rtsp://polypwngrand.ctf:21554"
+
+### Don't change this part ###
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  minimum: 250
+  decay: 10

@@ -1,0 +1,48 @@
+
+### Change this part ###
+
+name: "Hackladdin 2"
+author: Yoann
+category: Programming
+
+description: |-
+  ## Description (français)
+
+  Après être entré dans la grotte de Jhackfar, vous voyez des milliers de trésor. Cependant, seul un vous interesse : un tapis volant dernière génération. Malheuresement, le tapis est gardé en lieu sûr derrière une porte...
+
+  ## Description (english)
+
+  After entering Jhackfar's cave, you see thousands of treasures. However, only one interests you: a latest generation flying carpet. Unfortunately, the carpet is kept safe behind a door...
+
+flags:
+  - polycyber{V1v3l4Pr0Gr4m4m710nP4rC0nTr41nT3}
+
+tags:
+  - programming
+  - A:Yoann
+  - hard
+
+# If hints needed, choose the cost
+hints:
+  - {
+    content: "Tu connais la programmation par contraintes ? Minizinc est l'outil le plus utilisé à Agrabah !",
+    cost: 10
+  }
+
+
+# Requirements are used to make a challenge require another challenge to be solved before being available.
+requirements:
+  - "Règles"
+  - "Hackladdin 1"
+
+### Don't change this part ###
+
+value: 500
+type: docker
+extra:
+  docker_image: "hackladdin2:latest"
+  dynamic: True
+  initial: 500
+  decay: 10
+  minimum: 250
+

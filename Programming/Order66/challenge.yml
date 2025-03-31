@@ -1,0 +1,60 @@
+
+### Change this part ###
+
+name: "Order 66"
+author: azazhel
+category: Programming
+
+description: |-
+  ## Description (français)
+
+  Le Chancelier Suprême vous ordonne de retrouver l'ordre 66. Il affirme que c'est pour le bien de la République.
+  
+  ## Description (english)
+
+  The Supreme Chancellor orders you to find Order 66. He claims it is for the good of the Republic.
+
+
+flags:
+  - polycyber{0rd3r_66_n0_m0r3_j3d1}
+
+tags:
+  - Programming
+  - Pwn
+  - A:azazhel
+  - hard
+
+connection_info: nc ctf.polycyber.io <instance_port>
+
+# If files needed
+files:
+  - "order66.c"
+  - "order66"
+
+# If hints needed, choose the cost
+#hints:
+#  - {
+#    content: "This hint costs points",
+#    cost: 10
+#  }
+#  - This hint is free
+
+
+# Requirements are used to make a challenge require another challenge to be solved before being available.
+#requirements:
+#  - ""
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 500
+type: docker
+extra:
+  docker_image: "order66_img:latest"
+  dynamic: True
+  initial: 500
+  minimum: 250
+  decay: 10

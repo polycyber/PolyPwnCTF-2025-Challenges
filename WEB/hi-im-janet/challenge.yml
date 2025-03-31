@@ -1,0 +1,39 @@
+name: "I'm Janet I"
+author: Ch0ufleur
+category: Web
+
+description: |-
+  ## Description (français)
+
+  Salut, je suis Janet, votre assistante personnelle ici dans le Bon Endroit. Je suis un vaisseau humanoïde de toute la connaissance humaine.
+  Je viens tout juste d'être assassinée et je suis encore en train de récupérer tout le savoir de l'univers. C'est possible que je ne sois pas 100% fonctionnelle.
+  
+  ## Description (english)
+  
+  Hi! I'm Janet, your personal assistant here in the Good Place. I'm an anthropomorphized vessel of knowledge for all things there is to know about the universe.
+  I've just been murdered and still am regaining all the universe's knowledge. I might not be 100% operational yet.
+
+  
+connection_info: http://ctf.polycyber.io:25142/index.html
+
+flags:
+  - polycyber{i_4m_j4n3t_76dbc3aa1}
+
+tags:
+  - web
+  - A:Ch0ufleur
+  - beginner
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 500  
+type: dynamic
+extra:
+  initial: 500
+  minimum: 50
+  decay: 10
+

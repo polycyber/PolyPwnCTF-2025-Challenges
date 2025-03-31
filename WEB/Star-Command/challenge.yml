@@ -1,0 +1,56 @@
+name: "Star Command"
+author: Driikolu
+category: Web
+
+description: |-
+  ## Description (français)
+
+    Buzz l'Eclair est inquiet, Star Command ne répond plus. Depuis leur dernier combat contre Zurg, les suites sont toujours présentes sur leur plateforme web.
+    Mais Buzz est sûr que quelque chose se cache derrière tout ça !
+ 
+    Aidez-le à reprendre le contrôle du site de Star Command !
+
+    /!\ Aucun fuzz ou bruteforce n'est nécessaire
+  
+  ## Description (english)
+
+    Buzz Lightyear is worried, Star Command is not responding anymore Since their last fight against Zurg, sequels are still present on their web platform.
+    But Buzz is sure that something is behind all this!
+
+    Help him regain control of the Star Command site!
+    
+    /!\ No fuzz or bruteforce is needed
+
+flags:
+  - polycyber{BuzzLightyear_to_Star_Command!I_found_a_type_juggling!}
+
+tags:
+  - web
+  - A:Driikolu
+  - hard
+
+# If hints needed, choose the cost
+hints:
+  - {
+    content: "Seems like you can't say #NoFilters",
+    cost: 5
+  }
+  - {
+    content: "Only a Lightyear can go to the lightspeed",
+    cost: 15
+  }
+  - {
+    content: "Maybe it's time to be a juggler instead of a space ranger",
+    cost: 30
+  }
+
+connection_info: http://iorabu.ca:8000/
+
+### Don't change this part ###
+value: 500  
+type: dynamic
+extra:
+  initial: 500
+  minimum: 50
+  decay: 10
+

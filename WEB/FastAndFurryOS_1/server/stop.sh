@@ -1,0 +1,2 @@
+docker container stop furryos_container
+docker container remove furryos_container

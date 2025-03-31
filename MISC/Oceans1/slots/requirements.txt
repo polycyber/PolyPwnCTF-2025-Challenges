@@ -1,0 +1,2 @@
+flask==2.3.3
+gunicorn==23.0.0

@@ -1,0 +1,6 @@
+services:
+  hack_the_matrix:
+    build: .
+    ports:
+    - 22080:80
+    restart: unless-stopped

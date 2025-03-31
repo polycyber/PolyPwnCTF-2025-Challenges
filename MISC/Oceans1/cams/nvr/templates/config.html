@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}CONFIG{% endblock %}
+{% block content %}
+<div class="card">
+    <h2>Server Management</h2>
+    <ul>
+        <li><a href="#restart-server">Restart Server</a></li>
+        <li><a href="#check-status">Check Server Status</a></li>
+        <li><a href="#backup">Initiate Backup</a></li>
+    </ul>
+</div>
+<div class="card">
+    <h2>Network Settings</h2>
+    <form method="POST" action="/config">
+        {% if net_message %}{{net_message|safe}}{% endif %}
+        <div class="form-group">
+            <label for="securityStream">Security Stream ID:</label>
+            <input type="text" id="securityStream" name="securityStream" class="form-control" placeholder="Enter Security Stream ID">
+        </div>
+        <div class="form-group">
+            <label for="ipAddress">IP Address:</label>
+            <input type="text" id="ipAddress" name="ipAddress" class="form-control" placeholder="Enter IP Address">
+        </div>
+        <button type="submit" class="btn btn-primary">Update Network Settings</button>
+    </form>
+</div>
+<div class="card">
+    <h2>Security Settings</h2>
+    <form>
+        <div class="form-group">
+            <label for="firewallStatus">Firewall Status:</label>
+            <select id="firewallStatus" name="firewallStatus" class="form-control">
+                <option value="enabled">Enabled</option>
+                <option value="disabled">Disabled</option>
+            </select>
+        </div>
+        <button type="submit" onclick="javascript:alert('Not yet supported')" class="btn btn-primary">Update Security Settings</button>
+    </form>
+</div>
+<div class="card">
+    <h2>Stream preview</h2>
+    <form method="POST" action="/config">
+        {% if preview_message %}{{preview_message|safe}}{% endif %}
+        <div class="form-group">
+            <label for="previewIp">Preview IP:</label>
+            <input type="text" id="previewIp" name="previewIp" class="form-control" placeholder="Enter Preview IP">
+        </div>
+        <button type="submit" class="btn btn-primary">Preview Stream</button>
+    </form>
+</div>
+{% endblock %}

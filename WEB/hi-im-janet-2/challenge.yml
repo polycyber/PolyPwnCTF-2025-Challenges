@@ -1,0 +1,45 @@
+name: "I'm Janet II"
+author: Ch0ufleur
+category: Web
+
+description: |-
+  ## Description (français)
+
+  Salut, je suis Janet, votre assistante personnelle ici dans le Bon Endroit. Je suis un vaisseau humanoïde de toute la connaissance humaine.
+  Pour m'aider à passer au travers de ma rupture avec Jason, j'ai créé Derek.
+
+
+  Il est un peu étrange, comprend mal les standards et n'offre pas beaucoup d'options...
+  
+  ## Description (english)
+  
+  Hi! I'm Janet, your personal assistant here in the Good Place. I'm an anthropomorphized vessel of knowledge for all things there is to know about the universe.
+  To help myself overcome my breakup with Jason, I created Derek.
+
+
+  He is a bit weird, understands standards poorly and does not offer a lot of options...
+
+
+flags:
+  - polycyber{this_is_so_derek_43cca12a}
+
+tags:
+  - web
+  - A:Ch0ufleur
+  - beginner
+
+connection_info: http://ctf.polycyber.io:25143/derek/v1/ask
+
+# Requirements are used to make a challenge require another challenge to be solved before being available.
+requirements:
+  - "Règles"
+  - "I'm Janet I"
+
+### Don't change this part ###
+
+value: 500  
+type: dynamic
+extra:
+  initial: 500
+  minimum: 50
+  decay: 10

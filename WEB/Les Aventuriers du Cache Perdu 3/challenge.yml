@@ -1,0 +1,49 @@
+name: "Les Aventuriers du Cache Perdu - 3"
+author: Jake-Ransom
+category: Web
+
+description: |-
+  ## Description (français)
+
+  Vous êtes un aventurier en quête du légendaire artefact : le Cache d'Amun-Ra. Le célèbre explorateur Dr. Proxy Jones dirige une expédition pour retrouver cet artefact, et il utilise un site web pour consigner ses découvertes et organiser ses recherches.
+  Votre objectif ? Percer les secrets du succès de Dr. Jones et trouver le Cache d'Amun-Ra avant lui.
+
+  Il semble que ses cookies ne suffisent pas pour accéder à ses notes secrètes.
+  Vous devrez trouver un autre moyen, peut-être a-t-il consulté récemment ses notes ?
+
+  Vous pouvez utiliser l'instance du premier challenge de la track pour résoudre ce challenge.
+
+  ## Description (english)
+
+  You are an adventurer in search of the legendary artifact: the Cache d'Amun-Ra. Renowned explorer Dr. Proxy Jones is leading an expedition to find this artifact, and he's using a website to record his discoveries and organize his research.
+  Your objective? Unlock the secrets of Dr. Jones' success and find the Cache of Amun-Ra before he does.
+
+  It seems that his cookies are not enough to access his secret notes.
+  You will have to find another way, maybe he has recently consulted his notes?
+
+  You can use the instance of the first challenge of the track to solve this challenge.
+
+flags:
+  - polycyber{Luck7_h3_ch3ck3d_h1s_n0t3s_b3f0r3}
+
+files:
+  - "src-aventuriers-du-cache-perdu.zip"
+
+tags:
+  - hard
+  - web
+  - A:Jake-Ransom
+
+requirements:
+  - "Règles"
+  - "Les Aventuriers du Cache Perdu - 1"
+  - "Les Aventuriers du Cache Perdu - 2"
+
+### Don't change this part ###
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  minimum: 250
+  decay: 10

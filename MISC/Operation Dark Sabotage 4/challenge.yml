@@ -1,0 +1,61 @@
+
+### Change this part ###
+
+name: "Operation Dark Sabotage 4"
+author: azazhel
+category: Misc
+
+description: |-
+  ## Description (français)
+
+  Votre mission est de compromettre le système de ce rebelle afin d'exposer ses informations confidentielles.
+  Vive l'Empire !!!
+  
+  ## Description (english)
+
+  Your mission is to compromise this rebel's system in order to expose his confidential information.  
+  Long live the Empire !!!
+
+
+flags:
+  - polycyber{d34th_t0_th3_3mp1r3}
+
+tags:
+  - Misc
+  - A:azazhel
+  - medium
+
+connection_info: "ssh -p <instance_port> rebel@ctf.polycyber.io password: 2FzphpE0pYWHKr"
+
+
+# If files needed
+#files:
+#  - "src.c"
+
+# If hints needed, choose the cost
+#hints:
+#  - {
+#    content: "This hint costs points",
+#    cost: 10
+#  }
+#  - This hint is free
+
+
+# Requirements are used to make a challenge require another challenge to be solved before being available.
+requirements:
+  - "Règles"
+  - "Operation Dark Sabotage 3"
+
+
+
+### Don't change this part ###
+
+value: 500
+type: docker
+extra:
+  docker_image: "operationdarksabotage4_img:latest"
+  dynamic: True
+  initial: 500
+  minimum: 150
+  decay: 10
+

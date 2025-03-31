@@ -1,0 +1,1 @@
+HOST='manager.polypwngrand.ctf'

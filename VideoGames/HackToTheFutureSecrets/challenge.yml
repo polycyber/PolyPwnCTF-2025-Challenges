@@ -1,0 +1,33 @@
+name: "Hack to the Future - Hidden secrets"
+author: ptrstr
+category: Video Games
+
+description: |-
+  ## Description (français)
+
+  Doc pense toujours qu'il y a des secrets cachés partout. Il t'a dit que le centre commercial pourrait dissimuler quelque chose...
+
+  ## Description (english)
+
+  Doc always thinks there's hidden secrets everywhere. He told you the mall might have something to hide...
+
+flags:
+  - polycyber{alW4ys_s0m3Th1nG_h1Dd3N}
+
+tags:
+  - VideoGames
+  - A:ptrstr
+  - medium
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  minimum: 150
+  decay: 10

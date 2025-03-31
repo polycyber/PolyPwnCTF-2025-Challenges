@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8"></meta>
+    <head></head>
+    <style>
+        body {
+            background-color: honeydew;
+        }
+        .form-spacer {
+            margin-bottom: 1rem;
+        }
+        .page {
+            margin: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        a {
+            font-weight: bolder;
+            text-decoration: None;
+            color:deeppink;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+        a:hover {
+            color:rgb(163, 65, 81);
+        }
+    </style>
+    <script>
+        var snd = new Audio("the-good-place-janet-sound-effect.mp3");
+
+        function submitJanetAsk(event) {
+            event.preventDefault();
+            snd.play();
+            var xhttp = new XMLHttpRequest();
+            xhttp.responseType = 'blob';
+            xhttp.onreadystatechange = async function() {
+                if (this.readyState == 4) {
+                    // Convert the response to a Blob
+                    const blob = this.response;
+                    const imageUrl = URL.createObjectURL(blob);
+                    document.getElementById('janet-answer').src = imageUrl;
+                    const textAnswer = document.getElementById('text-answer');
+                    textAnswer.innerText = "Here you go!"
+                    // Yes what follows is supradelicious not-ugly at all code :D
+                    // What's the saying? This line is long because I lacked the time to make it shorter?
+                    textAnswer.style = `font-size:20px;padding:10px;background: white;font-weight: bolder;border:solid 5px black;color: #${Math.floor(Math.random() * 9)}${Math.floor(Math.random() * 9)}${Math.floor(Math.random() * 9)}${Math.floor(Math.random() * 9)}${Math.floor(Math.random() * 9)}F;`
+                 }
+            };
+            xhttp.open("POST", "http://ctf.polycyber.io:25143/janet/v2/ask", true);
+            xhttp.setRequestHeader("Content-type", "multipart/form-data");
+            const form = new FormData(event.target)
+            xhttp.send(form);
+        }
+
+    </script>
+    <body>
+        <div class="page">
+            <img src="cactus.gif" height="20%" width="40%"></img>
+            <p>I'm Janet. Sound on! 🎵 I have just been rebooted for the first time ever! I might be unreliable for a while! <a href="https://www.youtube.com/watch?v=-BDtrzYNutY" target="_blank">Here is an explanation.</a></p>
+            <p>Ask me anything! I can provide the file on anyone in existence, a baby elephant made of pure light that spits out truths about the universe, or even a <b>flag</b>&nbsp;!</p>
+            <form class="form-spacer" onsubmit="submitJanetAsk(event)">
+                <input name="ask">
+                <button type="submit">Ask Janet</button>
+            </form>
+            <p id="text-answer"></p>
+            <img id="janet-answer" width="25%">
+        </div>
+    </body>
+</html>

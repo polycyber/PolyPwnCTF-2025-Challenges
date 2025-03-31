@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Welcome{% endblock %}
+{% block content %}
+    <div class="text-center p-8 rounded-lg shadow-lg bg-white">
+        <h1 class="text-4xl font-bold mb-4">Welcome to the Casino!</h1>
+        <p class="text-lg mb-6">Experience the thrill of gambling and fun. Log in to start playing or sign up to join us!</p>
+        <div class="flex justify-center space-x-4">
+            {% if session.get('id') %}
+                <a href="/play" class="btn btn-primary px-6 py-2 text-lg">Play</a>
+                <a href="/logout" class="btn btn-secondary px-6 py-2 text-lg">Log out</a>
+            {% else %}
+                <a href="/login" class="btn btn-primary px-6 py-2 text-lg">Log In</a>
+                <a href="/signup" class="btn btn-secondary px-6 py-2 text-lg">Sign Up</a>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

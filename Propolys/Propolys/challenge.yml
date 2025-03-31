@@ -1,0 +1,41 @@
+
+### Change this part ###
+
+name: "Challenge Propolys"
+author: Propolys
+category: Propolys
+
+description: |-
+  ## Description (français)
+  Plongez dans les coulisses du septième art avec ce défi CTF unique ! Votre mission : imaginer une startup qui combat une menace de cybersécurité dans l'univers du cinéma. Deepfakes indétectables, fuites de scénarios confidentiels, piratage de projections avant-première… La scène est posée, et vous êtes les héros de cette aventure cyber.
+  C'est l'occasion parfaite pour démontrer votre créativité et votre esprit entrepreneurial. Chaque équipe présentera son concept avec une pitch dynamique et percutant. La meilleure idée décrochera la statuette ultime : 100 $ par membre de l'équipe gagnante.
+  Lumière, cyber, action ! 
+
+  ## Description (english)
+  Step onto the cyber red carpet with this one-of-a-kind CTF challenge! Your mission: envision a startup that tackles a cybersecurity threat in the film industry. From undetectable deepfakes and leaked blockbuster scripts to hacked premiere screenings, the stakes are high, and the cameras are rolling.
+  This is your chance to showcase your creativity and entrepreneurial spirit. Each team will deliver a compelling pitch to bring their idea to life. The winning concept will earn the ultimate prize: $100 per team member.
+  Lights, cyber, action!
+
+
+flags:
+  - polycyber{entrepreneurship_is_cool_with_propolys}
+
+tags:
+  - Propolys
+  - A:Propolys
+  - beginner
+
+files:
+  - "files/1. Instructions - Challenge Cybersécurité et Cinéma_Startup Scene.pdf"
+  - "files/EN_Instructions - Challenge Cybersécurité et Cinéma_Startup Scene.pdf"
+  - "files/2. Startup_Scene_Power Point Template.pptx"
+
+
+
+requirements:
+  - "Règles"
+
+### Don't change this part ###
+value: 100  
+type: standard
+
