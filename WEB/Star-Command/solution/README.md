@@ -33,7 +33,7 @@ Le nom du compte créé est réfléchi, et non nettoyé, donc on peut effectuer 
 ![Picture update form](images/picture-form.png)
 
 En effectuant quelques tests sur ce formulaire, on se rend compte que même si le serveur rejette notre image, une requête est bien effectuée.
-Pour vérifier cela on peut effectuer une requête vers notre machine, serveur, ou vhttps://github.com/synacktiv/php_filter_chain_generatoria un burp Collaborator.
+Pour vérifier cela on peut effectuer une requête vers notre machine, serveur, ou via un burp Collaborator.
 Il semblerait même que nous ayons affaire à une File Inclusion primitive.
 
 ### La File Inclusion
