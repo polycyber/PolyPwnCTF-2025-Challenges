@@ -43,8 +43,6 @@ hints:
 #  - "My previous great challenge"
 
 
-requirements:
-  - "Règles"
 
 value: 500
 type: dynamic

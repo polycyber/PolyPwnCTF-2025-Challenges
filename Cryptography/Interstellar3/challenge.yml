@@ -27,7 +27,6 @@ files:
   - "files/challenge.py"
 
 requirements:
-  - "Règles"
   - "This little decryption gonna cost us 52 years"
 
 ### Don't change this part ###

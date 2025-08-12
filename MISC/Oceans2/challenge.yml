@@ -30,7 +30,6 @@ tags:
   - hard
 
 requirements:
-  - "Règles"
   - "Ocean's 1"
 
 connection_info: "You will need to add `polypwngrand.ctf` to your `hosts` file. Point it to ctf.polycyber.io. HTTP: http://polypwngrand.ctf:21080, RTSP: rtsp://polypwngrand.ctf:21554"
