@@ -32,7 +32,6 @@ connection_info: http://ctf.polycyber.io:25143/derek/v1/ask
 
 # Requirements are used to make a challenge require another challenge to be solved before being available.
 requirements:
-  - "Règles"
   - "I'm Janet I"
 
 ### Don't change this part ###

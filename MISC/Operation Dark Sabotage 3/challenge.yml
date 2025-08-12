@@ -42,7 +42,6 @@ connection_info: "ssh -p <instance_port> c-3po@ctf.polycyber.io password: TiL3fT
 
 # Requirements are used to make a challenge require another challenge to be solved before being available.
 requirements:
-  - "Règles"
   - "Operation Dark Sabotage 2"
 
 

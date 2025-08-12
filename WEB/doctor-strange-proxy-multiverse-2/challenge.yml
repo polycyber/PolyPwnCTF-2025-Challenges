@@ -18,14 +18,13 @@ description: |-
   #### This track contains 4 challenges that must be solved linearly. At NO time can you scan, bruteforce, guess ports... This could result in disqualification.
   #### This track has 7 containers, but you won't have to interact with all of them.
 
-connection_info: http://iorabu.ca:8000/
+connection_info: http://ctf.polycyber.io:28000/
 
 flags:
   - polycyber{welcome_to_the_multiverse}
 
 
 requirements:
-  - "Règles"
   - "Doctor Strange and the Multiverse of Proxies I"
 
 

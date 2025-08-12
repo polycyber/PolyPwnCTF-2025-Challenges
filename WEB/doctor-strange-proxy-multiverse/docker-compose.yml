@@ -40,7 +40,7 @@ services:
     networks:
       my_network:   
     ports:
-      - 8000:80
+      - 28000:80
 
   container_2:
     build:

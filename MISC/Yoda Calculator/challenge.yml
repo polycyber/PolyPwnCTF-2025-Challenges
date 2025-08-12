@@ -45,8 +45,6 @@ connection_info: nc ctf.polycyber.io <instance_port>
 #  - "Operation Dark Sabotage 3"
 
 
-requirements:
-  - "Règles"
 
 ### Don't change this part ###
 

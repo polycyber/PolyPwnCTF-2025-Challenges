@@ -27,8 +27,6 @@ files:
   - "files/titanic.pcapng"
 
 
-requirements:
-  - "Règles"
 
 ### Don't change this part ###
 

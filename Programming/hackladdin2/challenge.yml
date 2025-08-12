@@ -32,7 +32,6 @@ hints:
 
 # Requirements are used to make a challenge require another challenge to be solved before being available.
 requirements:
-  - "Règles"
   - "Hackladdin 1"
 
 ### Don't change this part ###

@@ -43,7 +43,6 @@ connection_info: "ssh -p <instance_port> rebel@ctf.polycyber.io password: 2Fzphp
 
 # Requirements are used to make a challenge require another challenge to be solved before being available.
 requirements:
-  - "Règles"
   - "Operation Dark Sabotage 3"
 
 

@@ -27,8 +27,6 @@ files:
   - "judge.obj"
 
 
-requirements:
-  - "Règles"
 
 ### Don't change this part ###
 
