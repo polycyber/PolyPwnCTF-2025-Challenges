@@ -32,8 +32,6 @@ hints:
   - The distance to cluster center sometimes is a relevant metric.
 
 
-requirements:
-  - "Règles"
 
 
 ### Don't change this part ###

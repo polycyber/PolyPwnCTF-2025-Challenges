@@ -44,7 +44,7 @@ hints:
     cost: 30
   }
 
-connection_info: http://iorabu.ca:8000/
+connection_info: http://ctf.polycyber.io:23080/
 
 ### Don't change this part ###
 value: 500  

@@ -32,8 +32,6 @@ files:
   - "files/locatingprivateryan.pcap"
 
 
-requirements:
-  - "Règles"
 
 ### Don't change this part ###
 

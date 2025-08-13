@@ -31,7 +31,6 @@ files:
   - "files/points.txt"
 
 requirements:
-  - "Règles"
   - "Étude de Popcorn 1"
 
 hints:

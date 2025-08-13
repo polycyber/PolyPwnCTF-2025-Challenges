@@ -43,7 +43,6 @@ tags:
 # TODO: voir comment faire les 3 flags? devrait être 3 yml différents?
 # Requirements are used to make a challenge require another challenge to be solved before being available.
 requirements:
-  - "Règles"
   - "Fast and FurryOS 1"
 
 
