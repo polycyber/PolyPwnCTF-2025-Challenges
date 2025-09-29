@@ -18,6 +18,7 @@ flags:
   - polycyber{V1v3l4Pr0Gr4m4m710nP4rC0nTr41nT3}
 
 tags:
+  - PolyPwn2025
   - programming
   - A:Yoann
   - hard
@@ -40,8 +41,5 @@ value: 500
 type: docker
 extra:
   docker_image: "hackladdin2:latest"
-  dynamic: True
-  initial: 500
-  decay: 10
-  minimum: 250
+  dynamic: False
 

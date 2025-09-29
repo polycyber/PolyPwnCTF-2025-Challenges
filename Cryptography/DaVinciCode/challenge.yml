@@ -18,6 +18,7 @@ flags:
   - polycyber{cryp709r4phy_15_c00l}
 
 tags:
+  - PolyPwn2025
   - Cryptography
   - A:Alex
   - introduction

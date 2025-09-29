@@ -21,6 +21,7 @@ flags:
   - polycyber{C0nn3ct_4_1s_4w3s0m3}
 
 tags:
+  - PolyPwn2025
   - AI
   - A:Yoann
   - beginner
@@ -28,12 +29,9 @@ tags:
 
 ### Don't change this part ###
 
-value: 500
+value: 50
 type: docker
 extra:
   docker_image: "exmachinhack:latest"
-  dynamic: True
-  initial: 500
-  decay: 10
-  minimum: 50
+  dynamic: False
 

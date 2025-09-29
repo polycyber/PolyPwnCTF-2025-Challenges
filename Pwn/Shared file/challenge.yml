@@ -19,6 +19,7 @@ flags:
   - polycyber{r3b3l_c0mm_pr0gr4m_0wn3d}
 
 tags:
+  - PolyPwn2025
   - pwn
   - A:azazhel
   - hard
@@ -38,7 +39,4 @@ value: 500
 type: docker
 extra:
   docker_image: "shared_file_img:latest"
-  dynamic: True
-  initial: 500
-  minimum: 250
-  decay: 10
+  dynamic: False

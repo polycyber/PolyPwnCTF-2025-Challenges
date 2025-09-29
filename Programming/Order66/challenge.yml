@@ -19,6 +19,7 @@ flags:
   - polycyber{0rd3r_66_n0_m0r3_j3d1}
 
 tags:
+  - PolyPwn2025
   - Programming
   - Pwn
   - A:azazhel
@@ -52,7 +53,4 @@ value: 500
 type: docker
 extra:
   docker_image: "order66_img:latest"
-  dynamic: True
-  initial: 500
-  minimum: 250
-  decay: 10
+  dynamic: False

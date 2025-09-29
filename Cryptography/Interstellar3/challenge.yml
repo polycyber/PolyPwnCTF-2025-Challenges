@@ -17,6 +17,7 @@ flags:
   - polycyber{P4dd1n6_15_r3411y_b4d_bu7_pr377y}
 
 tags:
+  - PolyPwn2025
   - Cryptography
   - A:Alex
   - hard
@@ -32,8 +33,4 @@ requirements:
 ### Don't change this part ###
 
 value: 500
-type: dynamic
-extra:
-  initial: 500
-  minimum: 250
-  decay: 10
+type: standard

@@ -30,6 +30,7 @@ flags:
   - polycyber{lac_castors}
 
 tags:
+  - PolyPwn2025
   - osint
   - A:Dora
   - beginner
@@ -44,10 +45,7 @@ requirements:
 
 ### Don't change this part ###
 
-value: 500
-type: dynamic
-extra:
-  initial: 500
-  minimum: 50
-  decay: 10
+value: 50  
+type: standard
+
 

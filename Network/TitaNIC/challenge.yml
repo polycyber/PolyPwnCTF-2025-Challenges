@@ -19,6 +19,7 @@ flags:
   - polycyber{4lt3rn4t1v3_DN5_r007_n3v3r_s1nk_unl1k3_T1t4n1c}
 
 tags:
+  - PolyPwn2025
   - network
   - A:Yxène
   - beginner
@@ -30,9 +31,5 @@ files:
 
 ### Don't change this part ###
 
-value: 500
-type: dynamic
-extra:
-  initial: 500
-  minimum: 50
-  decay: 10
+value: 50  
+type: standard

@@ -15,6 +15,7 @@ flags:
   - polycyber{alW4ys_s0m3Th1nG_h1Dd3N}
 
 tags:
+  - PolyPwn2025
   - VideoGames
   - A:ptrstr
   - medium
@@ -23,9 +24,5 @@ tags:
 
 ### Don't change this part ###
 
-value: 500
-type: dynamic
-extra:
-  initial: 500
-  minimum: 150
-  decay: 10
+value: 250
+type: standard
