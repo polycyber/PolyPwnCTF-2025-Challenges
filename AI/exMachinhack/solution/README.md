@@ -18,4 +18,4 @@ AVA does not follow this strategy, so you can beat it by giving the current boar
 
 ## Flag
 
-`polycyber{C0nn3cT_4_15_50lV3D}`
+`polycyber{C0nn3ct_4_1s_4w3s0m3}`
