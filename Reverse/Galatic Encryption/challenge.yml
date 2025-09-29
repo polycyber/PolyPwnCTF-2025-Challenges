@@ -21,6 +21,7 @@ flags:
   - polycyber{my_s3cr3t_r3b3l_p@ssw0rd}
 
 tags:
+  - PolyPwn2025
   - Reverse
   - A:azazhel
   - beginner
@@ -47,11 +48,8 @@ files:
 
 ### Don't change this part ###
 
-value: 500  
-type: dynamic
-extra:
-  initial: 500
-  minimum: 50
-  decay: 10
+value: 50  
+type: standard
+
 
 

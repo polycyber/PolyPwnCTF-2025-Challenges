@@ -20,6 +20,7 @@ flags:
   - polycyber{tengwar is easy}
 
 tags:
+  - PolyPwn2025
   - Stegano
   - A:Yoann
   - beginner
@@ -32,10 +33,7 @@ files:
 
 ### Don't change this part ###
 
-value: 500  
-type: dynamic
-extra:
-  initial: 500
-  minimum: 50
-  decay: 10
+value: 50  
+type: standard
+
 

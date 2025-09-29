@@ -21,6 +21,7 @@ flags:
   - polycyber{L3t_th3_R3pUbl1c_b3g1n!}
 
 tags:
+  - PolyPwn2025
   - pwn
   - A:azazhel
   - medium
@@ -46,11 +47,8 @@ files:
 
 ### Don't change this part ###
 
-value: 500
+value: 250
 type: docker
 extra:
   docker_image: "republic_server_pwn:latest"
-  dynamic: True
-  initial: 500
-  minimum: 150
-  decay: 10
+  dynamic: False

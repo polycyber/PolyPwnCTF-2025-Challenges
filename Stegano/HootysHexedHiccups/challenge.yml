@@ -1,6 +1,6 @@
 name: "Hooty's Hexed Hiccups"
 author: Majeed A.Baki
-category: Steganographie
+category: Stegano
 
 description: |-
   ## Description (français)
@@ -21,6 +21,7 @@ flags:
   - polycyber{3D4_S4YS_TH4NKS}
 
 tags:
+  - PolyPwn2025
   - steganographie
   - "A:Majeed_A.B."
   - medium
@@ -44,9 +45,5 @@ hints:
 
 
 
-value: 500
-type: dynamic
-extra:
-  initial: 500
-  minimum: 150
-  decay: 10
+value: 250
+type: standard

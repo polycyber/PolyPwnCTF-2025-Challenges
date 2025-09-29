@@ -19,6 +19,7 @@ flags:
   - polycyber{VO1R_1A_v!3_En_reD_gRe3N_@nd_81u3}
 
 tags:
+  - PolyPwn2025
   - Stegano
   - A:Jean
   - beginner
@@ -35,9 +36,6 @@ files:
 
 ### Don't change this part ###
 
-value: 500  
-type: dynamic
-extra:
-  initial: 500
-  minimum: 50
-  decay: 10
+value: 50  
+type: standard
+

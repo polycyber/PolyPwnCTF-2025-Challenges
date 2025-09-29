@@ -19,6 +19,7 @@ flags:
   - polycyber{Km34nF0rClu57er1ng}
 
 tags:
+  - PolyPwn2025
   - AI
   - A:Yoann
   - beginner
@@ -36,9 +37,6 @@ hints:
 
 ### Don't change this part ###
 
-value: 500  
-type: dynamic
-extra:
-  initial: 500
-  minimum: 50
-  decay: 10
+value: 50  
+type: standard
+

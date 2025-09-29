@@ -18,6 +18,7 @@ flags:
   - polycyber{S1gn4tur3_1s_1mp0rt4nt_bu7_n0t_4lw4ys_s3cur3}
 
 tags:
+  - PolyPwn2025
   - Cryptography
   - A:Alex
   - medium
@@ -30,12 +31,8 @@ requirements:
   - "This little decryption gonna cost us 51 years"
 
 ### Don't change this part ###
-value: 500
+value: 250
 type: docker
 extra:
   docker_image: "interstellar2:latest"
-  dynamic: True
-  initial: 500
-  minimum: 150
-  decay: 10
-
+  dynamic: False

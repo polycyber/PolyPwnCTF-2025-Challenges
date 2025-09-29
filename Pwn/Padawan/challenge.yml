@@ -19,6 +19,7 @@ flags:
   - polycyber{y0ung_p@d@w@nn}
 
 tags:
+  - PolyPwn2025
   - pwn
   - A:azazhel
   - beginner
@@ -46,11 +47,8 @@ files:
 
 ### Don't change this part ###
 
-value: 500
+value: 50
 type: docker
 extra:
   docker_image: "padawan_img:latest"
-  dynamic: True
-  initial: 500
-  minimum: 50
-  decay: 10
+  dynamic: False

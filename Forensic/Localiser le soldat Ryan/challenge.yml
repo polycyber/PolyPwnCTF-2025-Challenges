@@ -23,6 +23,7 @@ flags:
   - POLYCYBER-G0S4V3PRIVAT3RY4N
 
 tags:
+  - PolyPwn2025
   - forensic
   - medium
   - A:chrichriGeorgie
@@ -35,10 +36,6 @@ files:
 
 ### Don't change this part ###
 
-value: 500  
-type: dynamic
-extra:
-  initial: 500
-  minimum: 150
-  decay: 10
+value: 250
+type: standard
 

@@ -24,6 +24,7 @@ flags:
   - polycyber{Wayne_Tower_22_30}
 
 tags:
+  - PolyPwn2025
   - Radiofrequency
   - medium
   - A:Alex
@@ -40,10 +41,5 @@ hints:
 
 ### Don't change this part ###
 
-value: 500  
-type: dynamic
-extra:
-  initial: 500
-  minimum: 150
-  decay: 10
-
+value: 250
+type: standard

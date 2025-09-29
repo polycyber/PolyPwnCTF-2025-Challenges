@@ -20,6 +20,7 @@ flags:
   - polycyber{W13nn3r_15_th1_50lut10n}
 
 tags:
+  - PolyPwn2025
   - Cryptography
   - A:Alex
   - beginner
@@ -31,10 +32,7 @@ files:
 
 ### Don't change this part ###
 
-value: 500  
-type: dynamic
-extra:
-  initial: 500
-  minimum: 50
-  decay: 10
+value: 50  
+type: standard
+
 

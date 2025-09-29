@@ -19,6 +19,7 @@ flags:
   - polycyber{L4_R0U1LL3_C4_BR153}
 
 tags:
+  - PolyPwn2025
   - pwn
   - A:Svieg
   - beginner
@@ -44,11 +45,8 @@ files:
 
 ### Don't change this part ###
 
-value: 500
+value: 50
 type: docker
 extra:
   docker_image: "prieure:latest"
-  dynamic: True
-  initial: 500
-  minimum: 50
-  decay: 10
+  dynamic: False

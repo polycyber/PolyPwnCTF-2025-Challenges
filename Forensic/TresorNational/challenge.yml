@@ -32,6 +32,7 @@ flags:
   - polycyber{y0u_foUn6_1hE_tra3sUr3}
 
 tags:
+  - PolyPwn2025
   - forensic
   - beginner
   - A:chrichriGeorgie
@@ -45,10 +46,7 @@ files:
 
 ### Don't change this part ###
 
-value: 500  
-type: dynamic
-extra:
-  initial: 500
-  minimum: 50
-  decay: 10
+value: 50  
+type: standard
+
 
