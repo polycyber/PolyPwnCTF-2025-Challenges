@@ -32,18 +32,10 @@ tags:
 
 # If hints needed, choose the cost
 hints:
-  - {
-    content: "Seems like you can't say #NoFilters",
-    cost: 5
-  }
-  - {
-    content: "Only a Lightyear can go to the lightspeed",
-    cost: 15
-  }
-  - {
-    content: "Maybe it's time to be a juggler instead of a space ranger",
-    cost: 30
-  }
+  - "Seems like you can't say #NoFilters"
+  - "Only a Lightyear can go to the lightspeed",
+  - "Maybe it's time to be a juggler instead of a space ranger"
+
 
 connection_info: http://ctf.polycyber.io:23080/
 

@@ -35,9 +35,7 @@ files:
 # If hints needed, choose the cost
 hints:
   - content: "FR: Boubou est 99.9% sûr que le flag est dans la 3ème image, mais il pense que les 2 premiers seront un bon entraînement. EN: Hooty is 99.9% sure the flag is in the 3rd image, but he thinks the first 2 will be good training."
-    cost: 0
   - content: "FR: Selon Hiboubou, Boubou aurait également avalé une potion de MélangeEnTête. Serait-il possible que les métadonnées des bitmaps aient été modifiés dans son estomac? EN: According to Owlbert, Hooty has also eaten a HeaderMix potion. Could it be that the bitmaps' metadatas were altered?"
-    cost: 5
 
 # Requirements are used to make a challenge require another challenge to be solved before being available.
 #requirements:
