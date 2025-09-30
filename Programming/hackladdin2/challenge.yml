@@ -25,10 +25,7 @@ tags:
 
 # If hints needed, choose the cost
 hints:
-  - {
-    content: "Tu connais la programmation par contraintes ? Minizinc est l'outil le plus utilisé à Agrabah !",
-    cost: 10
-  }
+  - content: "Tu connais la programmation par contraintes ? Minizinc est l'outil le plus utilisé à Agrabah !"
 
 
 # Requirements are used to make a challenge require another challenge to be solved before being available.

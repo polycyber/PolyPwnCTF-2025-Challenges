@@ -35,10 +35,7 @@ tags:
   - beginner
 
 hints:
-  - {
-    content: "What if hashtags had double meanings ? The tagged user doesn't seem to exist on this platform ...",
-    cost: 30
-  }
+  - "What if hashtags had double meanings ? The tagged user doesn't seem to exist on this platform ..."
 
 requirements:
   - "Hack me if you can - 1/5"

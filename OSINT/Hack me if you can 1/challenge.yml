@@ -36,11 +36,8 @@ files:
   - "FBI Wanted decsription.pdf"
 
 hints:
-  - {
-    content: "Frack seems to really insist on accessibility ...  
-    How does accessibility works for visually impaired people on this social network ? Pay attention to the hashtags !",
-    cost: 30
-  }
+  - How does accessibility works for visually impaired people on this social network ? Pay attention to the hashtags !
+
 
 
 
