@@ -35,8 +35,19 @@ files:
 
 ### Don't change this part ###
 
-value: 500
-type: docker
-extra:
-  docker_image: "shared_file_img:latest"
-  dynamic: False
+# value: 500
+# type: docker
+# extra:
+#   docker_image: "shared_file_img:latest"
+#   dynamic: False
+
+type: zync
+
+value: 500 # à modifier
+playbook_name: tcp
+
+deploy_parameters: 
+  image: shared_file_img
+  unique: false
+  published_ports:
+    - 4444

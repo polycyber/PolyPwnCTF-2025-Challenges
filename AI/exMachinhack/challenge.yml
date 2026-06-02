@@ -29,9 +29,20 @@ tags:
 
 ### Don't change this part ###
 
-value: 50
-type: docker
-extra:
-  docker_image: "exmachinhack:latest"
-  dynamic: False
+# value: 50
+# type: docker
+# extra:
+#   docker_image: "exmachinhack:latest"
+#   dynamic: False
+
+type: zync
+
+value: 50 # à modifier
+playbook_name: tcp
+
+deploy_parameters:
+  image: exmachinhack
+  unique: false
+  published_ports:
+    - 1337
 

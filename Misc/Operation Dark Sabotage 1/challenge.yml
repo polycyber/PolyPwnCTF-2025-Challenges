@@ -49,12 +49,22 @@ files:
 
 ### Don't change this part ###
 
-value: 30
-type: docker
-extra:
-  docker_image: "operationdarksabotage1_img:latest"
-  dynamic: false
-  initial: 30
-  minimum: 30
-  decay: 1
+# value: 30
+# type: docker
+# extra:
+#   docker_image: "operationdarksabotage1_img:latest"
+#   dynamic: false
+#   initial: 30
+#   minimum: 30
+#   decay: 1
 
+type: zync
+
+value: 30 # à modifier
+playbook_name: tcp
+
+deploy_parameters:
+  image: operationdarksabotage1_img
+  unique: false
+  published_ports:
+    - 22
