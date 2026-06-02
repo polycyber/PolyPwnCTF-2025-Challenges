@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y socat adduser sudo libc6-i386
 
-RUN rm /usr/bin/unminimize
+RUN rm -f /usr/bin/unminimize
 RUN apt-get remove --purge -y --allow-remove-essential apt && rm -rf /var/lib/apt/lists/*
 
 RUN echo 'avwRJHnhdQlv4S\navwRJHnhdQlv4S\n\n\n\n\n\n\n' | adduser user

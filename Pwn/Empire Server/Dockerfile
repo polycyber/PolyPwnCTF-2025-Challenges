@@ -10,7 +10,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN rm /usr/bin/unminimize
+RUN rm -f /usr/bin/unminimize
 RUN apt-get remove --purge -y --allow-remove-essential apt && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /root

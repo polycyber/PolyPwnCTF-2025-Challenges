@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y openssh-server nano vim gcc-multilib ma
     && apt-get clean \
     && mkdir -p /run/sshd
 
-RUN rm /usr/bin/unminimize
+RUN rm -f /usr/bin/unminimize
 RUN apt-get remove --purge -y --allow-remove-essential apt && rm -rf /var/lib/apt/lists/*
 
 RUN echo '9Y51HjIg6bN2TI\n9Y51HjIg6bN2TI\n\n\n\n\n\n\n' | adduser jhon
