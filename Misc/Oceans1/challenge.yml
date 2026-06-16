@@ -34,4 +34,13 @@ hints:
 ### Don't change this part ###
 
 value: 250
-type: standard
+type: zync
+deploy_parameters:
+  unique: true
+  expose:
+    - service: nginx-proxy
+      port: 80
+      type: http
+    - service: cams
+      port: 554
+      type: http
