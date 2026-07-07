@@ -11,14 +11,13 @@ RUN apk add --no-cache \
     gst-plugins-bad \
     gst-plugins-good \
     gst-plugins-ugly \
+    gst-rtsp-server \
     py3-opencv \
     py3-gunicorn \
     py3-flask \
     ffmpeg \
     ffmpeg-libs \
     ffmpeg-libswscale
-
-RUN apk add --no-cache gst-rtsp-server --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing/
 
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 
