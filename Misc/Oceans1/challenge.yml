@@ -33,7 +33,7 @@ hints:
 
 ### Don't change this part ###
 
-value: 250
+value: 8
 type: zync
 deploy_parameters:
   unique: true

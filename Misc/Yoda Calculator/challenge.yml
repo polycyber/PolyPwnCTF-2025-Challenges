@@ -57,7 +57,7 @@ connection_info: nc ctf.polycyber.io <instance_port>
 
 type: zync
 
-value: 500 # à modifier
+value: 15
 playbook_name: tcp
 
 deploy_parameters: 

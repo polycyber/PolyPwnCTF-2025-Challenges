@@ -43,7 +43,7 @@ hints:
 # type: standard
 
 type: zync
-value: 500
+value: 15
 deploy_parameters:
   unique: true
   expose:

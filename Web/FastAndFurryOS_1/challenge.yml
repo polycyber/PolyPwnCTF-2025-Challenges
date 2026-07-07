@@ -53,7 +53,7 @@ tags:
 # value: 50  
 # type: standard
 
-value: 50
+value: 3
 type: zync
 deploy_parameters:
   unique: true
