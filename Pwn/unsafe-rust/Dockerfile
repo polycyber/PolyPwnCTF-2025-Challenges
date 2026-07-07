@@ -29,6 +29,7 @@ WORKDIR /app
 
 # on copierait les fichiers de la manière suivante:
 COPY files/prieure .
+RUN chmod +x prieure
 COPY files/flag.txt .
 
 # installer les dépendances
