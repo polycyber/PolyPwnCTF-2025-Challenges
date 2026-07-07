@@ -1,17 +1,13 @@
 services:
   frontend:
     build: ./client
-    container_name: furryos_frontend_container
-    ports:
-    - 20303:8080
-    # volumes:
-    # - ./client:/app
+    image: furryos-frontend:latest
     restart: unless-stopped
+    networks:
+      - default
   backend:
     build: ./server
-    container_name: furryos_container
-    ports:
-    - 20304:5000
-    volumes:
-    - ./server/app:/code/app
+    image: furryos-backend:latest
     restart: unless-stopped
+    networks:
+      - default
