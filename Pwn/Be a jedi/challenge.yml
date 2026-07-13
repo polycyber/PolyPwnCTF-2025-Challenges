@@ -61,7 +61,7 @@ files:
 
 type: zync
 
-value: 2
+value: 30 # à modifier
 playbook_name: tcp
 
 deploy_parameters: 
