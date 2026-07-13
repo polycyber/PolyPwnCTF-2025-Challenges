@@ -33,5 +33,5 @@ connection_info: "You will need to add `polypwngrand.ctf` to your `hosts` file. 
 
 ### Don't change this part ###
 
-value: 500
+value: 17
 type: standard

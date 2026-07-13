@@ -37,7 +37,7 @@ tags:
 
 type: zync
 
-value: 50 # à modifier
+value: 3
 playbook_name: tcp
 
 deploy_parameters:
