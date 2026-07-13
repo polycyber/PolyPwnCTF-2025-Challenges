@@ -29,6 +29,7 @@ WORKDIR /app
 
 # on copierait les fichiers de la manière suivante:
 COPY files/prieure .
+RUN chmod +x prieure
 COPY files/flag.txt .
 
 # installer les dépendances
@@ -39,7 +40,7 @@ COPY files/flag.txt .
 
 RUN apt update && apt install -y socat
 
-RUN rm /usr/bin/unminimize
+RUN rm -f /usr/bin/unminimize
 RUN apt-get remove --purge -y --allow-remove-essential apt && rm -rf /var/lib/apt/lists/*
 
 # exemple pour un défi utilisant node.js, on voudrais installer les dépendances

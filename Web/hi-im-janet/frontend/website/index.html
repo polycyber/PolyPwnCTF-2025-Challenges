@@ -48,7 +48,7 @@
                     textAnswer.style = `font-size:20px;padding:10px;background: white;font-weight: bolder;border:solid 5px black;color: #${Math.floor(Math.random() * 9)}${Math.floor(Math.random() * 9)}${Math.floor(Math.random() * 9)}${Math.floor(Math.random() * 9)}${Math.floor(Math.random() * 9)}F;`
                  }
             };
-            xhttp.open("POST", "http://ctf.polycyber.io:25143/janet/v2/ask", true);
+            xhttp.open("POST", "/janet/v2/ask", true);
             xhttp.setRequestHeader("Content-type", "multipart/form-data");
             const form = new FormData(event.target)
             xhttp.send(form);

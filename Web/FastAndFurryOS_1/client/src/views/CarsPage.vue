@@ -56,7 +56,7 @@ export default {
   },
   methods: {
     async fetchData() {
-      const response = await fetch("http://ctf.polycyber.io:20304/cars");
+      const response = await fetch("/api/cars/");
       this.data = await response.json();
     },
     imageUrl(name) {

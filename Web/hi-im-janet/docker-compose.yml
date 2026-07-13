@@ -1,11 +1,13 @@
 services:
   frontend:
     build: ./frontend
-    ports:
-    - 25142:80
+    image: janet-frontend:latest
     restart: unless-stopped
+    networks:
+      - default
   backend-server:
     build: ./backend
-    ports:
-    - 25143:8000
+    image: janet-backend:latest
     restart: unless-stopped
+    networks:
+      - default

@@ -347,7 +347,7 @@ class CameraClient():
     def __init__(self, feed: LiveFeed, rtsp_media):
         self.feed = feed
         self.number_frames = 0
-        self.duration = 1 / self.feed.fps * Gst.SECOND  # duration of a frame in nanoseconds
+        self.duration = int(1 / self.feed.fps * Gst.SECOND)  # duration of a frame in nanoseconds
         rtsp_media.set_reusable(True)
         appsrc = rtsp_media.get_element().get_child_by_name('source')
         appsrc.connect('need-data', self.on_need_data)
@@ -363,7 +363,7 @@ class CameraClient():
             buf.duration = self.duration
             timestamp = self.number_frames * self.duration
             buf.pts = buf.dts = int(timestamp)
-            buf.offset = timestamp
+            buf.offset = int(timestamp)
             self.number_frames += 1
             retval = src.emit('push-buffer', buf)
         # print('pushed buffer, cam {}, frame {}, duration {} ns, durations {} s'.format(self.feed.name, self.number_frames,

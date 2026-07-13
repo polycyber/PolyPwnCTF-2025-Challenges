@@ -29,7 +29,7 @@ export default {
   },
   methods: {
     async login() {
-      const response = await fetch("http://ctf.polycyber.io:20304/secret_tmp_login", {
+      const response = await fetch("/api/secret_tmp_login/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
