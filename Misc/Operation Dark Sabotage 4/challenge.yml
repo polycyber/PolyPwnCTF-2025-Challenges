@@ -50,20 +50,9 @@ requirements:
 
 ### Don't change this part ###
 
-# value: 250
-# type: docker
-# extra:
-#   docker_image: "operationdarksabotage4_img:latest"
-#   dynamic: False
-
-type: zync
-
-value: 8
-playbook_name: tcp
-
-deploy_parameters: 
-  image: operationdarksabotage4_img
-  unique: false
-  published_ports:
-    - 22
+value: 250
+type: docker
+extra:
+  docker_image: "operationdarksabotage4_img:latest"
+  dynamic: False
 

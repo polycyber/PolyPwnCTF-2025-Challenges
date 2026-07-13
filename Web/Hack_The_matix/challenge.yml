@@ -21,8 +21,6 @@ description: |-
 
 
 
-connection_info: "Point metacortex.poly in your hosts file to the server IP. Port: <TCP Port 1>"
-
 flags:
   - polycyber{SQL_1nj3ct10n_1s_fun}
 
@@ -36,12 +34,6 @@ tags:
 
 ### Don't change this part ###
 
-value: 3
-type: zync
-deploy_parameters:
-  unique: true
-  expose:
-    - service: hack_the_matrix
-      port: 80
-      type: tcp
+value: 50  
+type: standard
 

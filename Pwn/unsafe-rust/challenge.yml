@@ -45,19 +45,8 @@ files:
 
 ### Don't change this part ###
 
-# value: 50
-# type: docker
-# extra:
-#   docker_image: "prieure:latest"
-#   dynamic: False
-
-type: zync
-
-value: 5
-playbook_name: tcp
-
-deploy_parameters: 
-  image: prieure
-  unique: false
-  published_ports:
-    - 4444
+value: 50
+type: docker
+extra:
+  docker_image: "prieure:latest"
+  dynamic: False

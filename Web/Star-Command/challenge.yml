@@ -33,20 +33,12 @@ tags:
 # If hints needed, choose the cost
 hints:
   - "Seems like you can't say #NoFilters"
-  - "Only a Lightyear can go to the lightspeed"
+  - "Only a Lightyear can go to the lightspeed",
   - "Maybe it's time to be a juggler instead of a space ranger"
 
 
+connection_info: http://ctf.polycyber.io:23080/
+
 ### Don't change this part ###
-
-# value: 500
-# type: standard
-
-type: zync
-value: 15
-deploy_parameters:
-  unique: true
-  expose:
-    - service: php
-      port: 80
-      type: http
+value: 500
+type: standard

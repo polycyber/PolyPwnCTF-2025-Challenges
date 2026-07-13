@@ -34,20 +34,9 @@ requirements:
 
 ### Don't change this part ###
 
-# value: 500
-# type: docker
-# extra:
-#   docker_image: "hackladdin2:latest"
-#   dynamic: False
-
-type: zync
-
-value: 17
-playbook_name: tcp
-
-deploy_parameters: 
-  image: hackladdin2
-  unique: false
-  published_ports:
-    - 1337
+value: 500
+type: docker
+extra:
+  docker_image: "hackladdin2:latest"
+  dynamic: False
 

@@ -18,7 +18,7 @@ description: |-
 
 
 flags:
-  - polycyber{C0nn3cT_4_15_50lV3D}
+  - polycyber{C0nn3ct_4_1s_4w3s0m3}
 
 tags:
   - PolyPwn2025
@@ -29,20 +29,9 @@ tags:
 
 ### Don't change this part ###
 
-# value: 50
-# type: docker
-# extra:
-#   docker_image: "exmachinhack:latest"
-#   dynamic: False
-
-type: zync
-
-value: 3
-playbook_name: tcp
-
-deploy_parameters:
-  image: exmachinhack
-  unique: false
-  published_ports:
-    - 1337
+value: 50
+type: docker
+extra:
+  docker_image: "exmachinhack:latest"
+  dynamic: False
 

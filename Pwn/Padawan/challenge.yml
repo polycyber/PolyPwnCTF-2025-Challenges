@@ -47,19 +47,8 @@ files:
 
 ### Don't change this part ###
 
-# value: 50
-# type: docker
-# extra:
-#   docker_image: "padawan_img:latest"
-#   dynamic: False
-
-type: zync
-
-value: 5
-playbook_name: tcp
-
-deploy_parameters: 
-  image: padawan_img
-  unique: false
-  published_ports:
-    - 4446
+value: 50
+type: docker
+extra:
+  docker_image: "padawan_img:latest"
+  dynamic: False

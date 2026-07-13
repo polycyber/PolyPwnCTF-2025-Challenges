@@ -38,19 +38,9 @@ files:
 
 ### Don't change this part ###
 
-# value: 250
-# type: docker
-# extra:
-#   docker_image: "plats_en_pagaille:latest"
-#   dynamic: False
+value: 250
+type: docker
+extra:
+  docker_image: "plats_en_pagaille:latest"
+  dynamic: False
 
-type: zync
-
-value: 8
-playbook_name: tcp
-
-deploy_parameters: 
-  image: plats_en_pagaille
-  unique: false
-  published_ports:
-    - 1437

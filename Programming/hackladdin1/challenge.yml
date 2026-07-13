@@ -26,20 +26,9 @@ tags:
 
 
 ### Don't change this part ###
-# value: 250
-# type: docker
-# extra:
-#   docker_image: "hackladdin1:latest"
-#   dynamic: False
-
-type: zync
-
-value: 10
-playbook_name: tcp
-
-deploy_parameters: 
-  image: hackladdin1
-  unique: false
-  published_ports:
-    - 1337
+value: 250
+type: docker
+extra:
+  docker_image: "hackladdin1:latest"
+  dynamic: False
 

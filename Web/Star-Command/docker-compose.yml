@@ -1,19 +1,32 @@
+version: "3.2"
 services:
   php:
-    build: ./php/
-    image: star-command-php:latest
+    build:
+      context: './php/'
+      args:
+       PHP_VERSION: ${PHP_VERSION}
     networks:
-      - default
-    restart: unless-stopped
+      - frontend
+      - backend
+    ports:
+      - "23080:80"
+    container_name: buzzlightyear-apache
 
   mysql:
-    build: ./mysql_scripts/
-    image: star-command-mysql:latest
+    image: mysql:${MYSQL_VERSION:-latest}
+    volumes:
+      - ./mysql_scripts:/docker-entrypoint-initdb.d
     networks:
-      - default
+      - backend
     environment:
-      MYSQL_ROOT_PASSWORD: "TheBiggestRootPasswordThatYouEverSeenSoNoOneCanBruteforceIt"
-      MYSQL_DATABASE: starcommand
-      MYSQL_USER: definitelynotzurg
-      MYSQL_PASSWORD: "BuzzLighyearToStarCommand!DoYouReceiveMe?"
-    restart: unless-stopped
+      MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
+      MYSQL_DATABASE: "${DB_NAME}"
+      MYSQL_USER: "${DB_USERNAME}"
+      MYSQL_PASSWORD: "${DB_PASSWORD}"
+    container_name: buzzlightyear-mysql
+
+networks:
+  frontend:
+  backend:
+volumes:
+    data:

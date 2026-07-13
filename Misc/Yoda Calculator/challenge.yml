@@ -49,20 +49,9 @@ connection_info: nc ctf.polycyber.io <instance_port>
 
 ### Don't change this part ###
 
-# value: 500
-# type: docker
-# extra:
-#   docker_image: "yoda_calculator_img:latest"
-#   dynamic: False
-
-type: zync
-
-value: 15
-playbook_name: tcp
-
-deploy_parameters: 
-  image: yoda_calculator_img
-  unique: false
-  published_ports:
-    - 4444
+value: 500
+type: docker
+extra:
+  docker_image: "yoda_calculator_img:latest"
+  dynamic: False
 
