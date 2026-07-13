@@ -20,8 +20,6 @@ description: |-
   Investigate the website, and find who is behind these changes. Dom is counting on you! UwU
 
 
-connection_info: http://ctf.polycyber.io:20303/
-
 flags:
   - polycyber{JUST_K33P_SCR0LL1NG}
 
@@ -52,5 +50,14 @@ tags:
 
 ### Don't change this part ###
 
-value: 50  
-type: standard
+# value: 50  
+# type: standard
+
+value: 50
+type: zync
+deploy_parameters:
+  unique: true
+  expose:
+    - service: frontend
+      port: 8080
+      type: http

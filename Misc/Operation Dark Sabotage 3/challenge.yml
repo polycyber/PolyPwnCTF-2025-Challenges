@@ -49,9 +49,21 @@ requirements:
 
 ### Don't change this part ###
 
-value: 250
-type: docker
-extra:
-  docker_image: "operationdarksabotage3_img:latest"
-  dynamic: False
+# value: 250
+# type: docker
+# extra:
+#   docker_image: "operationdarksabotage3_img:latest"
+#   dynamic: False
+
+type: zync
+
+value: 250 # à modifier
+playbook_name: tcp
+
+deploy_parameters: 
+  image: operationdarksabotage3_img
+  unique: false
+  published_ports:
+    - 22
+
 

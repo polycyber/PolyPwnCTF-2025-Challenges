@@ -24,7 +24,7 @@ tags:
   - A:ptrstr
   - medium
 
-connection_info: "You will need to add `polypwngrand.ctf` to your `hosts` file. Point it to ctf.polycyber.io. HTTP: http://polypwngrand.ctf:21080, RTSP: rtsp://polypwngrand.ctf:21554"
+connection_info: "You will need to add `polypwngrand.ctf` to your `hosts` file. Point it to ctf.polycyber.io. HTTP: http://polypwngrand.ctf:<TCP Port 1>, RTSP: rtsp://polypwngrand.ctf:<TCP Port 2>"
 
 hints:
   - "Danny: While on smoke break, I overheard a dev complaining about one of the page's SQL"
@@ -34,4 +34,13 @@ hints:
 ### Don't change this part ###
 
 value: 250
-type: standard
+type: zync
+deploy_parameters:
+  unique: true
+  expose:
+    - service: nginx
+      port: 80
+      type: tcp
+    - service: cams
+      port: 554
+      type: tcp

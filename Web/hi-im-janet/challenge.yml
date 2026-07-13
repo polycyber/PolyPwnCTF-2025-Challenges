@@ -14,8 +14,6 @@ description: |-
   I've just been murdered and still am regaining all the universe's knowledge. I might not be 100% operational yet.
 
   
-connection_info: http://ctf.polycyber.io:25142/index.html
-
 flags:
   - polycyber{i_4m_j4n3t_76dbc3aa1}
 
@@ -29,6 +27,15 @@ tags:
 
 ### Don't change this part ###
 
-value: 50  
-type: standard
+# value: 50
+# type: standard
+
+value: 50
+type: zync
+deploy_parameters:
+  unique: true
+  expose:
+    - service: frontend
+      port: 80
+      type: http
 
