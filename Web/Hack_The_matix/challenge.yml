@@ -10,18 +10,18 @@ description: |-
 
   Vous avez intercepté une communication suspecte provenant des serveurs de Metacortex, l'entreprise qui emploie Thomas Anderson. Les rumeurs disent que l'entreprise cache des secrets derrière des domaines cachés. Explorez leur infrastructure web et découvrez ce qu'ils essaient de dissimuler.
 
-  Le domaine de l'entreprise est : metacortex.poly, IP: 148.113.196.127, Port: 22080
+  Le domaine de l'entreprise est : metacortex.poly, IP: 141.95.158.87, Port: <TCP Port open>
 
   ## Description (english)
 
   You've intercepted suspicious communication from Metacortex servers, the company that employs Thomas Anderson. Rumors say the company hides secrets behind hidden domains. Explore their web infrastructure and uncover what they're trying to conceal.
 
-  The company's domain is: metacortex.poly, IP: 148.113.196.127, Port: 22080
+  The company's domain is: metacortex.poly, IP: 141.95.158.87, Port: <TCP Port open>
 
 
 
 
-connection_info: "Point metacortex.poly in your hosts file to the server IP. Port: <TCP Port 1>"
+connection_info: "Point metacortex.poly in your hosts file to the server IP."
 
 flags:
   - polycyber{SQL_1nj3ct10n_1s_fun}
